@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "백승"
+  name             : "백승진"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "안녕하세요. BaxDailyGit 블로그입니다."
+  bio              : "안녕하세요. 환영합니다."
   location         : "Suwon"
   email            :
   links:
