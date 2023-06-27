@@ -20,16 +20,18 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "About"
-    url: /about/
-  - title: "Sample Posts"
+#   - title: "About" # 네비게이션 바에 표시 되는 이름
+#     url: "/about/" # 클릭시 이동할 URL
+  - title: "By Year"
     url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
-    url: /terms/
+  - title: "Tag"
+    url: /tags/
+  - title: "Category"
+    url: /categories/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap
 
 
 # documentation links
