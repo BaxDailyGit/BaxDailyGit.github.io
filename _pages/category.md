@@ -1,7 +1,6 @@
 ---
-permalink: /category/
-title: "Category"
-excerpt: "category list"
-last_modified_at: 2023-06-27
-toc: true
+title: "Posts by Category"
+layout: categories
+permalink: /categories/
+author_profile: true
 ---
