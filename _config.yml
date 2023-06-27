@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "BaxDailyGit"
+title                    : "BaxDailyGit's DevLog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "BaxDailyGit"
 description              : "An amazing website"
 url                      : "https://BaxDailyGit.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "백승진"
+  name             : "Baek Seung Jin"
   avatar           : "/assets/bsj_t.png"
-  bio              : "안녕하세요. 환영합니다."
+  bio              : "Algorithm-focused Developer"
   location         : "Suwon"
   email            :
   links:
