@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Baek Seung Jin"
-  avatar           : "/assets/bsj_t.png"
+  avatar           : "/assets/bsj_image/bsj_t.png"
   bio              : "Algorithm-focused Developer"
   location         : "Suwon"
   email            :
