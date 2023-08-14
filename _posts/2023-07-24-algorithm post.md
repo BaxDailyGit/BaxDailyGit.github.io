@@ -19,16 +19,15 @@ date: 2023-07-24 03:00:00
 
 ### 백준
 
-|번호|제목|소스코드 파일|풀이|
+|번호|제목|문제 링크|블로그 풀이|
 |------|---|---|---|
-|0001|단순정렬|[code](https://github.com/BaxDailyGit/algorithm-solution-code/blob/main/code/baekjoon/1%2B1.py)|[BaxDailyGit's DevLog - ARPES 데이터 분석](https://baxdailygit.github.io/algorithm/second/)|
-|0002|심화정렬|[code](https://github.com/BaxDailyGit/algorithm-solution-code/blob/main/code/baekjoon/1%2B1.py)|[BaxDailyGit's DevLog - ARPES 데이터 분석](https://baxdailygit.github.io/algorithm/second/)|
-|0003|최단거리|[code](https://github.com/BaxDailyGit/algorithm-solution-code/blob/main/code/baekjoon/1%2B1.py)|[BaxDailyGit's DevLog - ARPES 데이터 분석](https://baxdailygit.github.io/algorithm/second/)|
+|0001|두 수의 곱|추가예정|추가예정|
+|0002|추가예정|추가예정|추가예정|
 
 ### 프로그래머스
 
-|번호|제목|소스코드 파일|풀이|
+|번호|제목|문제 링크|블로그 풀이|
 |------|---|---|---|
-|0001|단순정렬|[code](https://github.com/BaxDailyGit/algorithm-solution-code/blob/main/code/baekjoon/1%2B1.py)|[BaxDailyGit's DevLog - ARPES 데이터 분석](https://baxdailygit.github.io/algorithm/second/)|
-|0002|심화정렬|[code](https://github.com/BaxDailyGit/algorithm-solution-code/blob/main/code/baekjoon/1%2B1.py)|[BaxDailyGit's DevLog - ARPES 데이터 분석](https://baxdailygit.github.io/algorithm/second/)|
-|0003|최단거리|[code](https://github.com/BaxDailyGit/algorithm-solution-code/blob/main/code/baekjoon/1%2B1.py)|[BaxDailyGit's DevLog - ARPES 데이터 분석](https://baxdailygit.github.io/algorithm/second/)|
+|1|단순정렬|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120804?language=java)|[BaxDailyGit's DevLog - ARPES 데이터 분석](https://baxdailygit.github.io/algorithm/second/)|
+|2|추가예정|추가예정|추가예정|
+|3|추가예정|추가예정|추가예정|
