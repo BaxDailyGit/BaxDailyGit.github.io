@@ -27,7 +27,7 @@ date: 2023-07-24 03:00:00
 |3|나머지 구하기|사칙연산|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120810)|[BaxDailyGit's DevLog - 나머지 구하기](https://baxdailygit.github.io/algorithm/programmers0003/)|
 |4|두 수의 합|사칙연산|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120802)|[BaxDailyGit's DevLog - 두 수의 합](https://baxdailygit.github.io/algorithm/programmers0004/)|
 |5|두 수의 나눗셈|사칙연산, 조건문, 배열|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120806)|[BaxDailyGit's DevLog - 두 수의 나눗셈](https://baxdailygit.github.io/algorithm/programmers0005/)|
-|6|숫자 비교하기|사칙연산, 조건문, 배열|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120807)|[BaxDailyGit's DevLog - 두 수의 나눗셈](https://baxdailygit.github.io/algorithm/programmers0006/)|
+|6|숫자 비교하기|사칙연산, 조건문, 배열|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120807)|[BaxDailyGit's DevLog - 숫자 비교하](https://baxdailygit.github.io/algorithm/programmers0006/)|
 
 
 
@@ -37,6 +37,6 @@ date: 2023-07-24 03:00:00
 
 |번호|제목|문제 유형|문제 링크|블로그 풀이|
 |------|---|---|---|---|
-|0001||추가예정|추가예정|추가예정|추가예정|
+|0001|추가예정|추가예정|추가예정|추가예정|추가예정|
 
 
