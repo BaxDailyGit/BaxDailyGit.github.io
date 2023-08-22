@@ -25,7 +25,7 @@ date: 2023-07-24 03:00:00
 |1|두 수의 곱|사칙연산|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120804)|[BaxDailyGit's DevLog - 두수의 곱](https://baxdailygit.github.io/algorithm/programmers0001/)|
 |2|몫 구하기|사칙연산|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120805)|[BaxDailyGit's DevLog - 몫 구하기](https://baxdailygit.github.io/algorithm/programmers0002/)|
 |3|나머지 구하기|사칙연산|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120810)|[BaxDailyGit's DevLog - 나머지 구하기](https://baxdailygit.github.io/algorithm/programmers0003/)|
-|4||두 수의 합|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120802)|[BaxDailyGit's DevLog - 두 수의 합](https://baxdailygit.github.io/algorithm/programmers0004/)|
+|4||두 수의 합|사칙연산|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120802)|[BaxDailyGit's DevLog - 두 수의 합](https://baxdailygit.github.io/algorithm/programmers0004/)|
 |5|두 수의 나눗셈|사칙연산|[programmers](https://school.programmers.co.kr/learn/courses/30/lessons/120806)|[BaxDailyGit's DevLog - 두 수의 나눗셈](https://baxdailygit.github.io/algorithm/programmers0005/)|
 
 ### 백준
