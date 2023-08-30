@@ -45,7 +45,7 @@ public static int gcd(int a, int b) {
 
 
 
-### LCM\
+### LCM
 
 ```java
 public static int lcm(int a, int b) {
