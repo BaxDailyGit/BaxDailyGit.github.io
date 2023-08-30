@@ -3,7 +3,7 @@ layout: single
 published: true
 title:  "GCD와 LCM"
 categories: Algorithm
-date: 2023-08-29 13:30:00
+date: 2023-08-30 15:30:00
 toc: true
 toc_sticky: true
 ---
