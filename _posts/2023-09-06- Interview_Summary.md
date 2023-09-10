@@ -198,7 +198,6 @@ rest API의 중요한 특성 중 하나는 각 요청이 어떤 정보나 동작
 
 
 + 아래글을 참고해서 각 메서드를 써서 api를 호출해봅시다.  
-[![postman](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/56b3b005-0add-427c-92e4-1e32d21e9850)](https://baxdailygit.github.io/network/postman/)
 
 [<img src="https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/56b3b005-0add-427c-92e4-1e32d21e9850"  width="600" height="140"/>](https://baxdailygit.github.io/network/postman/)
 
