@@ -194,10 +194,14 @@ rest API의 중요한 특성 중 하나는 각 요청이 어떤 정보나 동작
   * 요청 본문에 정보를 담고 있습니다.
   * 주로 데이터를 제출하고, 서버의 데이터를 변경하는 데 활용됩니다.
   * 요청은 거의 캐시되지 않습니다. (서버에서 데이터를 업데이트하고 있기 때문입니다.)
-  * 최대 길이 제한이 없습니다.
+  * 최대 길이 제한이 없습니다.  
 
 
++ 아래글을 참고해서 각 메서드를 써서 api를 호출해봅시다.  
+[Postman으로 원하는 정보를 얻을 수 있는 api 호출해보자](https://baxdailygit.github.io/network/postman/)
 
+
+[![postman](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/574bf164-591a-4319-b460-65c5831d8ee1)](https://baxdailygit.github.io/network/postman/)
 
 
 
@@ -205,6 +209,7 @@ rest API의 중요한 특성 중 하나는 각 요청이 어떤 정보나 동작
 
 
 <br>
+
 
 ----------------
 <br>
