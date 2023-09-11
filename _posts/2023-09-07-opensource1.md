@@ -1,8 +1,8 @@
 ---
 layout: single
 published: true
-title:  "[리눅스]컴퓨터 시스템의 핵심 구성 요소와 리눅스 커널의 역할"
-categories: CS
+title:  "[CS]컴퓨터 시스템의 핵심 구성 요소와 리눅스 커널의 역할"
+categories: Computer Science
 date: 2023-09-07 14:28:00
 toc: true
 toc_sticky: true
