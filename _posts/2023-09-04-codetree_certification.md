@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[코드트리] 인증용 게시글"
-categories: Codetree
+categories: Algorithm-Codetree
 date: 2023-09-04 15:40:00
 tag:   
   - 코드트리
@@ -15,4 +15,4 @@ tag:
 <br>
 
 <p>
-코드트리 아이 : tmdwls8387  </p>
+코드트리 아이디 : tmdwls8387  </p>
