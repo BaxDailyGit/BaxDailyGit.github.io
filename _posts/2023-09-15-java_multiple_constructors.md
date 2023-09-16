@@ -3,15 +3,14 @@ layout: single
 published: true
 title:  "[JAVA]다중 생성자와 메서드 오버로딩"
 categories: Java
-date: 2023-09-15 16:26:00
+date: 2023-09-16 23:53:00
 toc: true
 toc_sticky: true
 tag:   
-  - Computer System
-  - Hardware
-  - Software
-  - Linux Kernel
-  - Terminal
+  - Java
+  - 생성자 (Constructors)
+  - 다중 생성자 (Multiple Constructors)
+  - 메서드 오버로딩 (Method Overloading)
 ---
 # 다중 생성자 (Multiple Constructors)와 메서드 오버로딩(method Overloading) 정리 
 
@@ -98,7 +97,7 @@ public class Main {
 
 # 주의점
 
-기억해야 할 점은 **기본생성자를 구현 안하고** 다른 생성자를 구현한 경우 
+기억해야 할 점은 **기본생성자를 구현 안하고** 다른 생성자를 구현한 경우입니다.
 
 ```java
 public class Main {
@@ -118,7 +117,7 @@ public class Main {
 
 # 메서드 오버로딩 (Method Overloading)
 
-이름이 같지만 매개변수가 다르거나 혹은 리턴타입이 다른 함수를 메서드 오버로딩이라고 한다. 
+이름이 같지만 매개변수가 다르거나 혹은 리턴타입이 다른 함수를 메서드 오버로딩이라고 합니다.
 
 ```java
 public class CarClass {
@@ -134,7 +133,7 @@ public class CarClass {
     }
 }
 ```
-함수 이름이 같으면 에러가 나지만 위 코드처럼 대신 매개변수가 다르거나 혹은 리턴타입이 다른경우 에러가 나지 않는다.
+함수 이름이 같으면 에러가 나지만 위 코드처럼 대신 매개변수가 다르거나 혹은 리턴타입이 다른경우 에러가 나지 않습니다.
 
 ```java
 public class Main {
@@ -148,7 +147,7 @@ public class Main {
 }
 ```
 
-TIP : main에서 내가 어떤 함수를 쓰고 있는지 보려면 ctrl을 누르고 함수를 누르면 해당 함수로 이동된다.
+TIP : main에서 내가 어떤 함수를 쓰고 있는지 보려면 ctrl을 누르고 함수를 누르면 해당 함수로 이동됩니다.
 
 
 
