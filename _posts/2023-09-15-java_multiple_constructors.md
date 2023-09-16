@@ -31,7 +31,7 @@ Java에서 클래스는 다중 생성자를 가질 수 있습니다. 다중 생�
 구현을 안해도 기본적을 생성됩니다. (주의점은 아래를 참고)
 
 ```java
-public class CarClass {
+public class Car {
     String name;
     Integer speed;
 
@@ -120,7 +120,7 @@ public class Main {
 이름이 같지만 매개변수가 다르거나 혹은 리턴타입이 다른 함수를 메서드 오버로딩이라고 합니다.
 
 ```java
-public class CarClass {
+public class CarC {
     Integer speed;
 
     public void speedUp(){ 
