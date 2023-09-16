@@ -1,7 +1,7 @@
 ---
 layout: single
 published: true
-title:  "[JAVA]다중 생성자와 메서드 오버로딩"
+title:  "[JAVA]접근 제어자(public, private, default, protected)"
 categories: Java
 date: 2023-09-16 23:53:00
 toc: true
