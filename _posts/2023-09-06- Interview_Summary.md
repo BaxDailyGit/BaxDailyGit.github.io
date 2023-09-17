@@ -211,6 +211,9 @@ rest API의 중요한 특성 중 하나는 각 요청이 어떤 정보나 동작
 
 
 
+#### 관련 포스트
 
-
-
+|번호	  |제목|
+|---|---|
+|1|[[네트워크]Postman으로 원하는 정보를 얻을 수 있는 api](https://baxdailygit.github.io/network/Interview_Summary/)|
+|2|[[네트워크]Postman으로 원하는 정보를 얻을 수 있는 api 호출해보자](https://baxdailygit.github.io/network/postman/)|

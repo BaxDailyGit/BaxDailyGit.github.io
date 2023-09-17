@@ -153,7 +153,12 @@ TIP : main에서 내가 어떤 함수를 쓰고 있는지 보려면 ctrl을 누�
 
 
 
+#### 관련 포스트
 
+|번호	  |제목|
+|---|---|
+|1|[[JAVA]다중 생성자와 메서드 오버로딩](https://baxdailygit.github.io/java/java_multiple_constructors/)|
+|2|[[JAVA]접근 제어자(public, private, default, protected)](https://baxdailygit.github.io/java/java_access_modifier/)|
 
 
 

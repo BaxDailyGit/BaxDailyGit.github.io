@@ -34,3 +34,13 @@ tag:
 
 ## 4. protected
 `protected`는 접근 제어자는 같은 패키지 내에서는 접근 가능하며, 다른 패키지의 하위 클래스에서도 접근 가능합니다.
+
+<br>
+
+#### 관련 포스트
+
+|번호	  |제목|
+|---|---|
+|1|[[JAVA]다중 생성자와 메서드 오버로딩](https://baxdailygit.github.io/java/java_multiple_constructors/)|
+|2|[[JAVA]접근 제어자(public, private, default, protected)](https://baxdailygit.github.io/java/java_access_modifier/)|
+
