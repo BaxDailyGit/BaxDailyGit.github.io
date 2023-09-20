@@ -43,5 +43,5 @@ public class TestController {
 
 한번 실행하고 브라우저에서 확인해보겠습니다.
 
-**바탕화면 getmapping 그림 첨부하기**
 
+<p align="left"><img src="https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/44cab66a-e5c8-47ec-991a-2bcc143f9f49" width="40%" height="40%"></p>   
