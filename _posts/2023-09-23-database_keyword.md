@@ -80,6 +80,40 @@ DBMS는 데이터베이스를 관리하는 소프트웨어로, 데이터의 저�
 * Tuple: 테이블의 각 행을 의미하며, 레코드라고도 합니다.
 * Attribute: 테이블의 열을 의미하며, 필드 또는 속성이라고도 합니다.
 
+### 테이블 생성 SQL 문법
+
+```sql
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....  
+);
+```
+
+## 데이터 조작어 (DML) 종류
+
+* SELECT - 검색
+```sql
+sELECT * FROM usertable;   // usertable에서 모든 데이터 출력하기
+SELECT name, age FROM usertable;   // usertable에서 name, age 컬럼 출력하기
+SELECT DISTINCT name FROM usertable;    // 데이터 중복제거시 DISTINCT 사용
+SELECT * FROM usertable ORDER BY age;   // age를 기준으로 오름차순 정렬
+SELECT * FROM usertable WHERE name = 'jane';   // name이 jane인 데이터 출력
+SELECT * FROM usertable WHERE age < 20;   // age가 20미만인 데이터 출력
+```
+* INSERT - 등록
+```sql
+INSERT INTO usertable(name, age) VALUES ('james', 20) ;   // usertable에 name은 james, age는 20인 데이터 삽입
+```
+* UPDATE - 수정
+```sql
+UPDATE usertable SET age=30 WHERE name='james';   // usertable에 james의 age를 30으로 변경
+```
+* DELETE - 삭제
+```sql
+DELETE FROM usertable WHERE name='james';   // usertable에 name이 james인 데이터를 삭제
+```
 
 ## Key
 
