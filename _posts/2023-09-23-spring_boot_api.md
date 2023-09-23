@@ -3,7 +3,7 @@ layout: single
 published: true
 title:  "[Spring Boot]Spring Boot로 간단한 API 구현하기"
 categories: SpringBoot
-date: 2023-09-23 11:00:00
+date: 2023-09-23 23:01:00
 toc: true
 toc_sticky: true
 tag:   
@@ -48,7 +48,7 @@ public class TestController {
 한번 실행하고 브라우저에서 확인해보겠습니다.
 
 
-<p align="left"><img src="https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/44cab66a-e5c8-47ec-991a-2bcc143f9f49" width="40%" height="40%"></p>   
+<p align="left"><img src="https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/44cab66a-e5c8-47ec-991a-2bcc143f9f49" width="55%" height="55%"></p>   
 
 입력란에 http://localhost:8080/api/name 을 입력하니 bax라는 이름이 잘 출력 된 것을 볼 수있습니다.
 
@@ -67,7 +67,7 @@ public class TestController {
     }
 ```
 
-이미지~~~
+<p align="left"><img src="https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/2e89bf71-a4d8-44cd-a4e2-6ebad1aac3f3" width="60%" height="60%"></p>  
 
 입력란에 http://localhost:8080/api/test?name=bax_query 을 입력하니 위와 같이 출력 된 것을 볼 수있습니다.
 
@@ -83,7 +83,8 @@ public class TestController {
     }
 ```
 
-이미지~~~
+<p align="left"><img src="https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/e59d10cb-6c0b-47ba-94f2-7c23d8821028" width="60%" height="60%"></p>
+
 
 입력란에 http://localhost:8080/api/test/bax_path 을 입력하니 위와 같이 출력 된 것을 볼 수있습니다.
 
@@ -105,7 +106,8 @@ public class TestController {
 
 한번 어플리케이션을 실행하고 POSTMAN 프로그램에서 POST요청후 전송이 되는지 봅시다.
 
-이미지~~~~
+<p align="left"><img src="https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/2f279805-24ec-4d5f-8587-013dff65ea06" width="75%" height="75%"></p>
+
 
 여기서 body가 json이나 다른 형식으로 하지 않고 text로 한 이유는 @RequestBody 뒤에 String을 넣어 두었기 때문입니다.
 
