@@ -79,15 +79,15 @@ SELECT * FROM usertable WHERE age < 20;   -- age가 20미만인 데이터 출력
 ```
 * INSERT - 등록
 ```sql
-INSERT INTO usertable(name, age) VALUES ('james', 20) ;   // usertable에 name은 james, age는 20인 데이터 삽입
+INSERT INTO usertable(name, age) VALUES ('james', 20) ;   -- usertable에 name은 james, age는 20인 데이터 삽입
 ```
 * UPDATE - 수정
 ```sql
-UPDATE usertable SET age=30 WHERE name='james';   // usertable에 james의 age를 30으로 변경
+UPDATE usertable SET age=30 WHERE name='james';   -- usertable에 james의 age를 30으로 변경
 ```
 * DELETE - 삭제
 ```sql
-DELETE FROM usertable WHERE name='james';   // usertable에 name이 james인 데이터를 삭제
+DELETE FROM usertable WHERE name='james';   -- usertable에 name이 james인 데이터를 삭제
 ```
 
 ### SELECT 실행 순서
