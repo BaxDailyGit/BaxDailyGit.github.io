@@ -70,12 +70,12 @@ CREATE TABLE table_name (
 
 * SELECT - 검색
 ```sql
-sELECT * FROM usertable;   // usertable에서 모든 데이터 출력하기
-SELECT name, age FROM usertable;   // usertable에서 name, age 컬럼 출력하기
-SELECT DISTINCT name FROM usertable;    // 데이터 중복제거시 DISTINCT 사용
-SELECT * FROM usertable ORDER BY age;   // age를 기준으로 오름차순 정렬
-SELECT * FROM usertable WHERE name = 'jane';   // name이 jane인 데이터 출력
-SELECT * FROM usertable WHERE age < 20;   // age가 20미만인 데이터 출력
+sELECT * FROM usertable;   -- usertable에서 모든 데이터 출력하기
+SELECT name, age FROM usertable;   -- usertable에서 name, age 컬럼 출력하기
+SELECT DISTINCT name FROM usertable;    -- 데이터 중복제거시 DISTINCT 사용
+SELECT * FROM usertable ORDER BY age;   -- age를 기준으로 오름차순 정렬
+SELECT * FROM usertable WHERE name = 'jane';   -- name이 jane인 데이터 출력
+SELECT * FROM usertable WHERE age < 20;   -- age가 20미만인 데이터 출력
 ```
 * INSERT - 등록
 ```sql
