@@ -2,21 +2,16 @@
 layout: single
 published: true
 title:  "[DB]면접 단골질문 정리"
-categories: Network
+categories: Database
 date: 2023-09-06 16:16:43
 toc: true
 toc_sticky: true
 tag:   
-  - API
-  - REST API
-  - HTTP 통신
-  - HTTP 메소드
-  - 인터페이스
-  - JSON 형식
-  - 프로토콜
-  - URL
-  - GET 메소드
-  - POST 메소드
+  - 데이터베이스 (Database)
+  - 트랜잭션 (Transaction)
+  - DDL
+  - DML
+  - DCL
 ---
 
 # 면접에서 단골질문 정리

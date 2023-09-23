@@ -2,7 +2,7 @@
 layout: single
 published: true
 title:  "[DB]데이터베이스 키워드 정리"
-categories: DataBase
+categories: Database
 date: 2023-09-23 23:22:00
 toc: true
 toc_sticky: true
