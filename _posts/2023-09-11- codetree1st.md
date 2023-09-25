@@ -12,7 +12,7 @@ tag:
   - 코딩테스트실력진단
 ---
 
-## 코드트리 첫 실력진단평가
+## 코드트리 첫번쨰 실력진단평가
 
 졸업을 한학기 앞두고 코딩테스트를 위해서 "알고리즘을 공부해야지 해야지" 생각만 하고 있었다가 코드트리 챌린지라는 좋은 기회를 발견하여 참가하였다. 혼자보단 이런 챌린지를 참가하면 더욱 의욕이 솟아난다.
 
@@ -27,7 +27,8 @@ tag:
 ## 결과
 
 나의 점수는 393점이었다.  
-[![](https://banner.codetree.ai/v1/banner/tmdwls8387)](https://www.codetree.ai/profiles/tmdwls8387)
+
+![393](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/e325c7c8-ceb6-4cdf-9a94-abc70110e4b7)
 
 아쉬움이 컷다.  
 반면에 현실의 나의 위치는 이정도였구나를 직접적으로 느끼면서 더많은 시간을 투자해야겠다는 생각이 든다.
