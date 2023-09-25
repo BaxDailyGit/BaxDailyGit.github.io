@@ -1,7 +1,7 @@
 ---
 layout: single
 published: true
-title:  "[코드트리 챌린지] 코드트리 세번째 진단평가"
+title:  "[코드트리 챌린지] 코드트리 세번째 실력진단평가"
 categories: Algorithm-Codetree
 date: 2023-09-25 23:55:43
 toc: true
@@ -11,8 +11,6 @@ tag:
   - 코딩테스트
   - 코딩테스트실력진단
 ---
-
-## 코드트리 세번째 실력진단평가
 
 코드트리 첫 실력진단평가를 본지 벌써 2주가 지나갔다. 
 
