@@ -15,7 +15,7 @@ tag:
   - 메서드 오버로딩
   - Method Overloading
 ---
-# 다중 생성자 (Multiple Constructors)와 메서드 오버로딩(method Overloading) 정리 
+## 다중 생성자 (Multiple Constructors)와 메서드 오버로딩(method Overloading) 정리 
 
 Java에서 클래스는 다중 생성자를 가질 수 있습니다. 다중 생성자는 동일한 클래스의 객체를 다양한 방법으로 초기화할 수 있게 해줍니다. 다중생성자를 알기 전에 생성자를 보겠습니다.
 

@@ -14,7 +14,7 @@ tag:
   - Encapsulation
 ---
 
-# 접근 제어자 (public, private, default, protected) 정리
+## 접근 제어자 (public, private, default, protected) 정리
 
 자바에서 클래스, 변수, 메서드 등의 멤버들은 접근 제어자를 사용하여 외부에서의 접근을 제한하거나 허용할 수 있습니다. 네 가지 접근 제어자 `public`, `private`, `default`, `protected`에 대해 아래에 정리합니다.
 

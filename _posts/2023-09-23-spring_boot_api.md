@@ -15,8 +15,6 @@ tag:
   - Annotations
 ---
 
-# Spring Boot로 간단한 API 구현하기
-
 `인텔리제이에서 새 프로젝트를 만들고 실행하고 나서 브라우저에서 localhost:8080을 입력했을때 Whitelabel Error Page가 뜨도록 하였습니다.`
 
 이제 간단한 API 구현해보겠습니다.
