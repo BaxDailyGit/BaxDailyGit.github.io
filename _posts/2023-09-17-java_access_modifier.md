@@ -7,9 +7,11 @@ date: 2023-09-17 01:45:00
 toc: true
 toc_sticky: true
 tag:   
-  - 자바 (Java)
-  - 접근제어자 (AccessModifiers)
-  - 정보은닉 (Encapsulation)
+  - 자바
+  - Java
+  - 접근제어자 
+  - 정보은닉
+  - Encapsulation
 ---
 
 # 접근 제어자 (public, private, default, protected) 정리

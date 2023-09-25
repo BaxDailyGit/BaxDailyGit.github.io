@@ -7,10 +7,12 @@ date: 2023-09-23 23:01:00
 toc: true
 toc_sticky: true
 tag:   
-  - Spring Boot (스프링 부트)
-  - API 구현 (API Implementation)
-  - 어노테이션 (Annotations)
-  - REST API (REST API)
+  - Spring Boot
+  - 스프링 부트
+  - API 구현
+  - API Implementation
+  - 어노테이션
+  - Annotations
 ---
 
 # Spring Boot로 간단한 API 구현하기

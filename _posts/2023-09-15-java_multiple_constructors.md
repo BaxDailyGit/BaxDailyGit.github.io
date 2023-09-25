@@ -8,9 +8,12 @@ toc: true
 toc_sticky: true
 tag:   
   - Java
-  - 생성자 (Constructors)
-  - 다중 생성자 (Multiple Constructors)
-  - 메서드 오버로딩 (Method Overloading)
+  - 생성자
+  - Constructors
+  - 다중 생성자
+  - Multiple Constructors
+  - 메서드 오버로딩
+  - Method Overloading
 ---
 # 다중 생성자 (Multiple Constructors)와 메서드 오버로딩(method Overloading) 정리 
 

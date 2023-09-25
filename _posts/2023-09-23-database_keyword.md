@@ -7,10 +7,14 @@ date: 2023-09-23 23:22:00
 toc: true
 toc_sticky: true
 tag:   
-  - 데이터베이스 (Database)
-  - 데이터베이스 관리 시스템 (DataBase Management System)
-  - 관계형 데이터베이스 (Relational Database)
-  - SQL 쿼리 (SQL Query)
+  - 데이터베이스
+  - Database
+  - 데이터베이스 관리 시스템
+  - DBMS
+  - 관계형 데이터베이스
+  - Relational Database
+  - SQL
+  - Query
 ---
 
 # 데이터베이스 키워드 정리

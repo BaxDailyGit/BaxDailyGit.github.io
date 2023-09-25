@@ -7,8 +7,10 @@ date: 2023-09-24 02:25:43
 toc: true
 toc_sticky: true
 tag:   
-  - 데이터베이스 (Database)
-  - 트랜잭션 (Transaction)
+  - 데이터베이스
+  - Database
+  - 트랜잭션
+  - Transaction
   - DDL
   - DML
   - DCL
