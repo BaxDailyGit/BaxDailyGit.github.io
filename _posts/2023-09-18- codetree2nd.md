@@ -25,7 +25,8 @@ tag:
 ## 결과
 
 이번 점수도 393점이었다.  
-[![](https://banner.codetree.ai/v1/banner/tmdwls8387)](https://www.codetree.ai/profiles/tmdwls8387)
+![KakaoTalk_20230911_160059720](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/fa03efeb-d59c-4ede-99a5-e979a4e15706)
+
 
 아쉽긴 하지만 다음에는 좋은 점수를 받을수 있을것 같았다.
 
@@ -34,9 +35,9 @@ tag:
 
 ## 진단 요약
 
-![codetree_test](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/cdae791c-d049-4ab5-9520-4b6fb288843c)
+![화면 캡처 2023-09-18 235235](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/8d04113c-3467-432c-9223-aece4dcbd843)
 
-조금 더 배열에 익숙해지고 2차원 배열도 공부해서 반드시 그 문제를 풀고 말겠다.
+배열에 대해서 더 많이 공부해야겠다.
 
 
 <br>
