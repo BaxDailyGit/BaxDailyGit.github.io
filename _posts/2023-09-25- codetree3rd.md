@@ -25,7 +25,8 @@ tag:
 ## 결과
 
 이번 점수는 446점이 나왔다.  
-[![](https://banner.codetree.ai/v1/banner/tmdwls8387)](https://www.codetree.ai/profiles/tmdwls8387)
+![화면 캡처 2023-09-25 231446](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/edeb2ccb-0f64-4564-9a2f-ab2631834871)
+
 
 점수가 오르긴 한걸 보니 기분은 좋았다. 하지만 알고리즘 구현능력이 올랐다기 보단 시험을 세번째 보니 환경에 익숙해져서 코딩 속도가 빨라져서 나온 점수 같았다.
 
@@ -33,9 +34,9 @@ tag:
 
 ## 진단 요약
 
-![codetree_test](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/cdae791c-d049-4ab5-9520-4b6fb288843c)
+![화면 캡처 2023-09-25 231748](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/3b0f7dbd-c5f1-459a-8b25-56535b265444)
 
-말 그대로 2차원 배열 문제들을 더 풀어서 익숙해져야겠다.
+2차원 배열 문제들을 더 풀어봐야겠다.
 
 ## 학습한 문제
 
