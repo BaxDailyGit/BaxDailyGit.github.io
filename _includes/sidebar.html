@@ -1,9 +1,7 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
 
 <div>
-  <a href="https://hits.sh/baxdailygit.github.io/">
-    <img alt="Hits" src="https://hits.sh/baxdailygit.github.io.svg?view=today-total&style=for-the-badge&label=visitor&color=ffffff&labelColor=ffffff"/>
-  </a>
+
 </div>
 
 
@@ -23,5 +21,17 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
+
+
+  <a href="https://hits.sh/baxdailygit.github.io/">
+    <style>
+      .hits{
+        width: auto; height: auto;
+        max-width: 99px; max-height: 20px;
+      }
+    </style>  
+    <img alt="Hits" src="https://hits.sh/baxdailygit.github.io.svg?view=today-total&style=flat-square&label=HITS&color=FFFFFF&labelColor=FFFFFF"/></a>"/>
+  </a>
+
   </div>
 {% endif %}
