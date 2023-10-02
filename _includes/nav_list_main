@@ -8,7 +8,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-        <span>Total Posts</span> <span>{{sum}}</span>
+         <span>Total Posts</span> <span>{{sum}}</span>
       </li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
@@ -46,5 +46,17 @@
                 {% endfor %}
             </ul>
       </li>
+      <li>
+        <a href="https://hits.sh/baxdailygit.github.io/">
+            <style>
+              .hits{
+                width: auto; height: auto;
+                max-width: 99px; 
+                max-height: 20px;
+              }
+            </style>  
+            <img class="hits" src="https://hits.sh/baxdailygit.github.io.svg?view=today-total&style=flat-square&label=VIEWS&color=fbfcfc&labelColor=fbfcfc"/>
+          </a>
+     </li>
   </ul>
 </nav>
