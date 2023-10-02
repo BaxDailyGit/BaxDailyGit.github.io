@@ -1,7 +1,7 @@
 ---
 layout: single
 published: true
-title:  "[CS]리눅스 vi editor 모드와 명령어"
+title:  "[CS]리눅스 VIM 모드와 명령어"
 categories: Linux
 date: 2023-10-01 23:55:00
 toc: true
@@ -12,13 +12,13 @@ tag:
 
 <br>
 
-## 리눅스 vi editor 모드와 명령어
+## 리눅스 VIM 모드와 명령어
 
-리눅스 운영체제에서 텍스트 편집 작업에 사용되는 편집기 중 하나가 vi editor이며 곧 VIM을 많이 씁니다. 이 글에서는 VIM의 기본적인 사용법에 대해서 작성합니다.
+리눅스 운영체제에서 텍스트 편집 작업에 사용되는 vi editor편집기 중 하나인 VIM을 많이 씁니다. 이 글에서는 VIM의 기본적인 사용법에 대해서 작성합니다.
 
 ## 1. Normal 모드:
 
-vi editor는 총 4개의 모드로 구성되어 있습니다.
+VIM는 총 4개의 모드로 구성되어 있습니다.
 
 Normal 모드: 기본 모드로, 명령어를 입력하고 편집을 수행하는 모드입니다.
 
@@ -46,9 +46,9 @@ Visual 모드에서 나가려면 `ESC` 키를 누릅니다.
 `:` 키를 눌러 Command 모드로 들어간 후에 다양한 리눅스 명령어를 사용할 수 있습니다.
 
 
-### vi editor 명령어 순서
+### VIM 명령어 순서
 
-vi editor를 어렵게 느끼는 이유 중 하나는 
+VIM를 어렵게 느끼는 이유 중 하나는 
 ```bash
 [count] + [operator] + [motion]
 ```
@@ -65,11 +65,11 @@ vi editor를 어렵게 느끼는 이유 중 하나는
 
 
 
-### vi Editor 명령어들
+### VIM 명령어들
 
 ![vieditor](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/eb58978b-083b-4ef6-bce5-49d93e412cb5)
 
-필요할때 위 이미지만 보면 될것 같습니다. 이제 vi editor에 들어가는것부터 차근차근 정리해보겠습니다.
+필요할때 위 이미지만 보면 될것 같습니다. 이제 vi editor에서 많이 쓰이는 명령어들을 차근차근 정리해보겠습니다.
 
 <br>
 
