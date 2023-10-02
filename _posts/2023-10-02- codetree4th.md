@@ -22,8 +22,8 @@ tag:
 
 ## 결과
 
-이번 점수는 446점이 나왔다.  
-![화면 캡처 2023-09-25 231446](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/edeb2ccb-0f64-4564-9a2f-ab2631834871)
+이번 점수는 498점이 나왔다.  
+![KakaoTalk_20231002_235052626](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/120d0e1d-3720-4e55-aa6e-539fecef0160)
 
 조금씩 점수가 오르기 시작한다.
 
@@ -31,7 +31,7 @@ tag:
 
 ## 진단 요약
 
-![화면 캡처 2023-09-25 231748](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/3b0f7dbd-c5f1-459a-8b25-56535b265444)
+![KakaoTalk_20231002_234550389](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/007a5f76-7e84-4b4d-b9c9-e665e1e2bc6c)
 
 2차원 배열을 마저 학습하고 시뮬레이션으로 넘어가야겠다.  
 내가 무엇이 부족한지 진단해주는 부분이 코드트리의 장점인것 같다.
