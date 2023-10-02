@@ -45,6 +45,8 @@ tag:
 n x n 크기의 격자에 정수를 채워넣으려고 합니다. 1부터 시작해서 차례대로 n 
 2
  까지 채워넣는데, 다음 그림과 같이 오른쪽 아래에서 부터 위 아래 지그재그 방향으로 채워넣는 프로그램을 작성해보세요.
+ 
+<img width="261" alt="ea8b7f0f-4948-4dab-b621-fd2e2674d7d5" src="https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/4d4ad4be-7842-4e3b-9711-40e9a52b814e">
 
 ----------------
 
