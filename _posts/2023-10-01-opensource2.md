@@ -67,7 +67,8 @@ vi editor를 어렵게 느끼는 이유 중 하나는
 
 ## vi Editor 명령어들
 
-![Alt text](image.png)
+![vieditor](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/eb58978b-083b-4ef6-bce5-49d93e412cb5)
+
 필요할때 위 이미지만 보면 될것 같습니다.
 
 아래는 차근차근 예를 들어 명령어를 사용해보겠습니다.
