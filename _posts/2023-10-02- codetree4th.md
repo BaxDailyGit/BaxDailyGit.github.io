@@ -36,22 +36,19 @@ tag:
 2차원 배열을 마저 학습하고 시뮬레이션으로 넘어가야겠다.  
 내가 무엇이 부족한지 진단해주는 부분이 코드트리의 장점인것 같다.
 
-## 학습한 문제
+## 인상깊은 문제
 
-### 배열로 사각형 만들기
+### 격자 반대로 채우기
 
 #### 문제 설명
 
-배열을 만들어서 아래 조건을 만족해 출력하는 프로그램을 작성해보세요.
-
-첫 번째 행과 첫 번째 열은 모두 1로 초기화 합니다.
-나머지 칸들은 바로 위의 값과 바로 왼쪽의 값을 더합니다.
-크기는 5 * 5 입니다.
+n x n 크기의 격자에 정수를 채워넣으려고 합니다. 1부터 시작해서 차례대로 n 
+2
+ 까지 채워넣는데, 다음 그림과 같이 오른쪽 아래에서 부터 위 아래 지그재그 방향으로 채워넣는 프로그램을 작성해보세요.
 
 ----------------
 
 #### 제한사항
-
 
 시간 제한: 1000ms
 메모리 제한: 80MB
@@ -61,18 +58,19 @@ tag:
 
 #### 입력 예
 
-
+```
+4
+```
 
 #### 출력 예
 
 
 ```
 1 1 1 1 1
-1 2 3 4 5
-1 3 6 10 15
-1 4 10 20 35
-1 5 15 35 70
-
+13 12 5 4
+14 11 6 3
+15 10 7 2
+16 9 8 1
 ```
 
 ----------------
@@ -84,31 +82,57 @@ tag:
 #### 나의 풀이 코드
 
 ```java
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int n = 5;
-        int[][] arr2d = new int[n][n];
+        Scanner sc = new Scanner(System.in);
+        int n=0;
+        n = sc.nextInt();
+        int[][] arr = new int[n][n];
 
-        for (int i=0;  i<n; i++) {
-            arr2d[i][0] = 1;
-        }
-        for (int j=0; j<n; j++) {
-            arr2d[0][j] = 1;
-        }
+        int count = 1;
 
-        for (int i=1; i<n; i++) {
-            for (int j=1; j<n; j++) {
-                arr2d[i][j] = arr2d[i-1][j] + arr2d[i][j-1] ;
+        if (n%2 == 0){
+            for(int c=n-1; c>=0; c--){
+            if (c%2 == 1){
+                for(int r=n-1; r>=0; r--){
+                    arr[r][c] = count;
+                    count++;
+                }
+            }
+            else if (c%2 == 0){
+                for(int r=0; r<n; r++){
+                    arr[r][c] = count;
+                    count++;
+                }
             }
         }
+        }
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(arr2d[i][j] + " ");
+        if (n%2 == 1){
+            for(int c=n-1; c>=0; c--){
+            if (c%2 == 0){
+                for(int r=n-1; r>=0; r--){
+                    arr[r][c] = count;
+                    count++;
+                }
             }
+            else if (c%2 == 1){
+                for(int r=0; r<n; r++){
+                    arr[r][c] = count;
+                    count++;
+                }
+            }
+        }
+        }
+    
+        for(int i=0; i<n; i++) {
+	        for(int j=0; j<n; j++) {
+		        System.out.print(arr[i][j] +" "); 
+	        }
             System.out.println();
         }
-
     }
 }
 ```
@@ -118,13 +142,10 @@ public class Main {
 
 #### 배운점
 
-```java
-for(int i = 0; i < 5; i++) {
-    arr[i][0] = 1;
-    arr[0][i] = 1;
-}
-```    
 <p>
-시간복잡도는 달라지지 않겠지만 그래도 행과 열을 함께 초기화 할 생각을 못했다. 센스있게 풀자.
+푸는데 시간이 많이 걸린 문제였다. 어렵게 풀고 해설을 보는데 코드가 너무 간결하고 쉬웠다.
 </p>
 
+지금껏 띄엄 띄엄 풀어왔더니 이전 문제들에서 학습해야 할 부분(스킬)을 놓친것이었다.
+
+진도가 느리더라도 커리큘럼을 믿고 차근차근 가야 구멍이 안생길것 같다.
