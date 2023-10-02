@@ -34,5 +34,11 @@
     <img class="hits" src="https://hits.sh/baxdailygit.github.io.svg?view=today-total&style=flat-square&label=VIEWS&color=fbfcfc&labelColor=fbfcfc"/>
   </a>
 
+  {% if page.sidebar_main %}
+    {% include nav_list_main %}
+  {% endif %}
+
   </div>
+  
 {% endif %}
+
