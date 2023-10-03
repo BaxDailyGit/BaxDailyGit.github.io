@@ -62,14 +62,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "algorithm-programmers" %}
-                        <li><a href="/categories/#algorithm-programmers" class=""> - 프로그래머스 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Algorithm-Programmers" class=""> - 프로그래머스 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "algorithm-codetree" %}    
-                        <li><a href="/categories/#algorithm-codetree" class=""> - 코드트리({{category[1].size}})</a></li>
+                        <li><a href="/categories/#Algorithm-Codetree" class=""> - 코드트리({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
