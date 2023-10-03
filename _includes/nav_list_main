@@ -26,29 +26,28 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Java" %}
-                        <li><a href="/categories/java" class=""> - Java({{category[1].size}})</a></li>
+                        <li><a href="/categories/#java" class=""> - Java({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Database" %}
-                        <li><a href="/categories/database" class=""> - Database({{category[1].size}})</a></li>
+                        <li><a href="/categories/#database" class=""> - Database({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">CS</span> <!--CS--> 
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Network" %}
-                        <li><a href="/categories/network" class=""> - Network({{category[1].size}})</a></li>
+                        <li><a href="/categories/#network" class=""> - Network({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Linux" %}
-                        <li><a href="/categories/linux" class=""> - Linux({{category[1].size}})</a></li>
+                        <li><a href="/categories/#linux" class=""> - Linux({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -56,14 +55,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class=""> - 알고리즘 구현({{category[1].size}})</a></li>
+                        <li><a href="/categories/#algorithm" class=""> - 알고리즘 구현({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "algorithm-programmers" %}
-                        <li><a href="/categories/algorithm-programmers" class=""> - 프로그래머스 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#algorithm-programmers" class=""> - 프로그래머스 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
