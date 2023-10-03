@@ -51,7 +51,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Algorithm</span> <!--Algorithm-->   
+        <span class="nav__sub-title">Algorithm</span> <!--Algorithm-->    
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
@@ -61,12 +61,16 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "algorithm-programmers" %}
                         <li><a href="/categories/#algorithm-programmers" class=""> - 프로그래머스 ({{category[1].size}})</a></li>
+                    {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    <li><a href="/categories/#algorithm-codetree" class=""> - 코드트리({{category[1].size}})</a></li>
+                    {% if category[0] == "algorithm-codetree" %}    
+                        <li><a href="/categories/#algorithm-codetree" class=""> - 코드트리({{category[1].size}})</a></li>
+                    {% endif %}
                 {% endfor %}
             </ul>
       </li>
