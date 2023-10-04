@@ -26,6 +26,85 @@
     {% include nav_list_main %}
   {% endif %}
 
+
+  <nav class="nav__list">
+    <input id="ac-toc" name="accordion-toc" type="checkbox" />
+    <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+    <ul class="nav__items" id="category_tag_menu">
+        <!--전체 글 수-->
+        <li>
+           <span>Total Posts</span> <span>{{sum}}</span>
+        </li>
+        <li>
+          <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+              <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+                  <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                  <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+          <span class="nav__sub-title">Programming</span> <!--Programming--> 
+              <ul>
+                  {% for category in site.categories %}
+                      {% if category[0] == "SpringBoot" %}
+                          <li><a href="/categories/#springboot" class=""> - SpringBoot({{category[1].size}})</a></li>
+                      {% endif %}
+                  {% endfor %}
+              </ul>
+              <ul>
+                  {% for category in site.categories %}
+                      {% if category[0] == "Java" %}
+                          <li><a href="/categories/#java" class=""> - Java({{category[1].size}})</a></li>
+                      {% endif %}
+                  {% endfor %}
+              </ul>
+              <ul>
+                  {% for category in site.categories %}
+                      {% if category[0] == "Database" %}
+                          <li><a href="/categories/#database" class=""> - Database({{category[1].size}})</a></li>
+                      {% endif %}
+                  {% endfor %}
+              </ul>
+              <ul>
+                  {% for category in site.categories %}
+                      {% if category[0] == "Network" %}
+                          <li><a href="/categories/#network" class=""> - Network({{category[1].size}})</a></li>
+                      {% endif %}
+                  {% endfor %}
+              </ul>
+              <ul>
+                  {% for category in site.categories %}
+                      {% if category[0] == "Linux" %}
+                          <li><a href="/categories/#linux" class=""> - Linux({{category[1].size}})</a></li>
+                      {% endif %}
+                  {% endfor %}
+              </ul>
+          <span class="nav__sub-title">Algorithm</span> <!--Algorithm-->    
+              <ul>
+                  {% for category in site.categories %}
+                      {% if category[0] == "Algorithm" %}
+                          <li><a href="/categories/#algorithm" class=""> - 알고리즘 구현({{category[1].size}})</a></li>
+                      {% endif %}
+                  {% endfor %}
+              </ul>
+              <ul>
+                  {% for category in site.categories %}
+                      {% if category[0] == "Algorithm-Programmers" %}
+                          <li><a href="/categories/#algorithm-programmers" class=""> - 프로그래머스 ({{category[1].size}})</a></li>
+                      {% endif %}
+                  {% endfor %}
+              </ul>
+              <ul>
+                  {% for category in site.categories %}
+                      {% if category[0] == "Algorithm-Codetree" %}    
+                          <li><a href="/categories/#algorithm-codetree" class=""> - 코드트리({{category[1].size}})</a></li>
+                      {% endif %}
+                  {% endfor %}
+              </ul>
+        </li>
+    </ul>
+  </nav>
+
+
+
+
   <li>
     <a href="https://hits.sh/baxdailygit.github.io/">
         <style>
