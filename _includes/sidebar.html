@@ -22,11 +22,11 @@
     {% endif %}
   {% endif %}
 
-  {% if page.sidebar_main %}
-    {% include nav_list_main %}
-  {% endif %}
 
 
+
+  <!--카테고리-->
+  {% assign sum = site.posts | size %}
   <nav class="nav__list">
     <input id="ac-toc" name="accordion-toc" type="checkbox" />
     <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
@@ -105,6 +105,8 @@
 
 
 
+
+<!--hit-->
   <li>
     <a href="https://hits.sh/baxdailygit.github.io/">
         <style>
