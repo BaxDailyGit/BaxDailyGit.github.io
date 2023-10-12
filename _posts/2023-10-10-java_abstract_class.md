@@ -3,13 +3,12 @@ layout: single
 published: true
 title:  "[JAVA]추상클래스"
 categories: Java
-date: 2023-10-10 20:11:00
+date: 2023-10-11 13:32:00
 toc: true
 toc_sticky: true
 tag:   
   - 자바
   - Java
-
 ---
 
 ## 추상 클래스 (abstract class)
