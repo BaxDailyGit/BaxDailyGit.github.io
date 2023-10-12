@@ -3,7 +3,7 @@ layout: single
 published: true
 title:  "[JAVA]추상클래스"
 categories: Java
-date: 2023-09-17 20:11:00
+date: 2023-10-10 20:11:00
 toc: true
 toc_sticky: true
 tag:   
