@@ -1,7 +1,7 @@
 ---
 layout: single
 published: true
-title:  "[CS]리눅스 VIM 모드와 명령어"
+title:  "[Linux]리눅스 VIM 모드와 명령어"
 categories: Linux
 date: 2023-10-01 23:55:00
 toc: true
