@@ -3,7 +3,7 @@ layout: single
 published: true
 title:  "[JAVA]추상클래스"
 categories: Java
-date: 2023-10-11 13:32:00
+date: 2023-10-12 13:32:00
 toc: true
 toc_sticky: true
 tag:   
@@ -43,9 +43,9 @@ abstract class 클래스이름 {
 
 
 ```java
-
 //어떤 기능을 수행하려고 추상메서드를 만드는것인지 작성하는것이 좋다.
 abstract 리턴타입 메서드이름(); 
+
 ```
 
 이때 선언만 하고 구현은 안하므로 {}를 사용하지 않고 ';'(세미콜론)으로 끝마무리한다.
