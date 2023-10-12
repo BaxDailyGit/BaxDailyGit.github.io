@@ -19,4 +19,4 @@ last_modified_at: 2023-10-12
 
 |번호	  |제목|
 |---|---|
-|1|[2023년, 대학교 마지막 학기를 어떻게 보낼까?](https://baxdailygit.github.io/retrospect/start/)|
+|1|[[회고] 2023년, 대학교 마지막 학기를 어떻게 보낼까?](https://baxdailygit.github.io/retrospect/review_start/)|
