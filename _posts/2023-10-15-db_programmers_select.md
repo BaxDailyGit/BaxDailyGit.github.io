@@ -26,6 +26,7 @@ tag:
   - 여러 기준으로 정렬하기
   - 상위 n개 레코드
   - 조건에 맞는 회원수 구하기
+  - 3월에 태어난 여성 회원 목록 출력하기
 ---
 
 ## 프로그래머스 SELECT 20문제 풀이 모음
@@ -291,11 +292,21 @@ AND AGE <= 29
 ## level 2
 
 
-### 17. 
+### 17. 3월에 태어난 여성 회원 목록 출력하기
 
 ```sql
-
+SELECT MEMBER_ID, 
+       MEMBER_NAME, 
+       GENDER, 
+       DATE_FORMAT(DATE_OF_BIRTH, '%Y-%m-%d') AS DATE_OF_BIRTH
+FROM MEMBER_PROFILE
+WHERE MONTH(DATE_OF_BIRTH) = '03'
+AND TLNO IS NOT NULL
+AND GENDER = 'W'
+ORDER BY MEMBER_ID ASC
 ```
+
+배운점 : 날짜에서 '월'만 가져오고 싶다면 MONTH()을 사용하면 된다.
 
 <br>
 
@@ -303,11 +314,18 @@ AND AGE <= 29
 
 
 
-### 18. 
+### 18. 재구매가 일어난 상품과 회원 리스트 구하기
 
 ```sql
-
+SELECT USER_ID, PRODUCT_ID 
+FROM ONLINE_SALE
+GROUP BY USER_ID, PRODUCT_ID
+HAVING COUNT(*) >1 -- 여기서 COUNT(속성명)이 아닌 COUNT(*)이유는 NULL 값을 포함한 개수까지 세기 때문이다.
+ORDER BY USER_ID ASC, PRODUCT_ID DESC
 ```
+배운점 : 중복 데이터를 가져오고 싶으면 GROUP BY, HAVING을 사용하면 되는데  
+이때 동일한 데이터 중에 동일한 다른 속성을 가진 데이터를 가져오고 싶으면 'GROUP BY 속성, 속성' 을 하면 된다.  
+또한 COUNT(속성명)이 아닌 COUNT(*)이유는 NULL 값을 포함한 개수까지 세기 때문이다.
 
 <br>
 
