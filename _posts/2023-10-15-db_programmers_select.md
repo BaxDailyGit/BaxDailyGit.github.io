@@ -353,38 +353,3 @@ ORDER BY USER_ID ASC, PRODUCT_ID DESC
 
 <br>
 
-
-
-
-
-### 11. 
-
-```sql
-
-```
-
-<br>
-
-
-
-
-
-### 11. 
-
-```sql
-
-```
-
-<br>
-
-
-
-
-
-### 11. 
-
-```sql
-
-```
-
-<br>
