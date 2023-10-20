@@ -1,3 +1,11 @@
 User-agent: *
 Allow: /
+Allow: /assets/favicon.ico
+Allow: /assets/favicon.ico/favicon-16x16.png
+Allow: /assets/favicon.ico/favicon-32x32.png
+Allow: /assets/favicon.ico/favicon-96x96.png
+Allow: /BaxDailyGit.github.io/assets/favicon.ico
+Allow: /BaxDailyGit.github.io/assets/favicon.ico/favicon-16x16.png
+Allow: /BaxDailyGit.github.io/assets/favicon.ico/favicon-32x32.png
+Allow: /BaxDailyGit.github.io/assets/favicon.ico/favicon-96x96.png
 Sitemap: https://baxdailygit.github.io/sitemap.xml
