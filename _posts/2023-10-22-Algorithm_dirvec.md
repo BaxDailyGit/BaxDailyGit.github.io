@@ -1,14 +1,14 @@
 ---
 layout: single
 published: true
-title:  "방향벡터 dx, dy 기법"
+title:  "[알고리즘 개념]방향벡터 dx, dy 기법"
 categories: Algorithm
 date: 2023-10-22 13:10:00
 toc: true
 toc_sticky: true
 ---
 
-## 방향벡터 dx, dy 테크닉
+## 방향벡터 dx, dy 기법
 
 ### 개요
 

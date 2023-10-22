@@ -1,7 +1,7 @@
 ---
 layout: single
 published: true
-title:  "GCD와 LCM"
+title:  "[알고리즘 개념]GCD와 LCM"
 categories: Algorithm
 date: 2023-08-30 15:30:00
 toc: true
