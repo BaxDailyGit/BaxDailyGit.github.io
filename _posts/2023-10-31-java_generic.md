@@ -36,7 +36,7 @@ public class Gclass<T> {
 ```
 
 
-> * **public class Gclass<`T``>** :  
+> * **public class Gclass<`T`>** :  
 > Gclass는 제네릭 클래스로 선언되며, 타입 매개변수인 T를 사용합니다.   
 > 이렇게 정의된 T는 클래스 내부에서 임의의 데이터 타입으로 사용됩니다. 이로써 Gclass는 어떤 타입의 데이터도 다룰 수 있습니다.
 > 
