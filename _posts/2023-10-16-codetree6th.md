@@ -18,12 +18,13 @@ tag:
 
 일주일이 지나 다시금 진단 평가를 보았다.  
 
-3번 문제인 격자 문제는 풀었지만 이후 백트래킹 문제를 시간안에 못풀었다. 이후 시뮬레이션 문제가 나왔지만 10분이란 시간은 너무 적었다. 그만큼 나의 실력이 아직 부족하구나 느낀다.
+3번 문제인 격자 문제는 풀었지만 이후 백트래킹 문제를 시간안에 못풀었다. 이후 시뮬레이션 문제를 풀었다. 전에는 동서남북, 이동거리를 구현하였던것으로 기억하는데 이번에는 오른쪽으로 90도 회전과 앞으로 전진 기능을 구현하도록 했다.
 
 ## 결과
 
 이번 점수는 506점이 나왔다.  
-![스크린샷 2023-10-09 233829](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/95731e4e-d2f7-4ddc-ab9c-0402de6c39b6)
+![스크린샷 2023-10-30 205951](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/f7c35392-8ef2-47ea-aa63-7b93892b3001)
+
 
 
 
@@ -31,14 +32,13 @@ tag:
 
 ## 진단 요약
 
-![스크린샷 2023-10-09 233338](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/5dfa8aeb-b0d2-46bd-afe6-eff34036d5ed)
+![스크린샷 2023-10-30 205635](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/6b3274db-8fba-485e-b936-61472d340eb2)
 
 
-![스크린샷 2023-10-09 233415](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/58f6f990-3882-42b9-84c3-8223fd433128)
+![스크린샷 2023-10-30 205705](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/84e938a2-0f40-4848-920b-8b46ad7974ba)
 
 ## 평가 후 클리닉 문제
 
-평가 후에 나오는 관련 문제들을 풀었다. 전에는 바로 끄고 정규 학습 문제를 풀었었는데 그러지 않고 이것을 풀었더라면 점수가 올랐을것 같다.
 
 ### 방향에 맞춰 이동
 
@@ -107,5 +107,5 @@ public class Main {
 
 #### 배운점
 
-dx, dy 배열을 만들어 특정 방향으로 이동할때 좌표가 어떻게 변하는지 계산하는 방법은 처음 배우는데 조금더 관련 문제들을 풀어봐야겠다.
+
 
