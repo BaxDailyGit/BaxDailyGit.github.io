@@ -53,7 +53,7 @@ DFS 문제를 시간안에 풀고 이후 dp 문제가 나왔다. 주어진 행�
 ```java
 import java.util.*;
 
-public class ConnectedNodesCount {
+public class Main{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt(); // 노드의 총 개수
