@@ -40,17 +40,9 @@ tag:
 ## 평가 후 클리닉 문제
 
 
-### 방향에 맞춰 이동
 
-
-![스크린샷 2023-10-09 233457](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/cb32c56e-c34c-445f-a119-77e22893d39b)
-
-
-![스크린샷 2023-10-09 233520](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/36c8c843-e322-4384-9d5c-2be3aec9c6a6)
-
-
-![스크린샷 2023-10-09 233541](https://github.com/BaxDailyGit/BaxDailyGit.github.io/assets/99312529/068a038e-be50-421d-a5fc-e8a3430def83)
-
+![스크린샷 2023-10-31 122230](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/4685ca49-617b-4119-a8a3-848c9a658560)
+![스크린샷 2023-10-31 122247](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/365c5b0b-4995-4c5c-9334-0199754e2155)
 
 
 
@@ -65,41 +57,35 @@ tag:
 import java.util.Scanner;
 
 public class Main {
-    public static int n, x, y;
-
-    //dx, dy를 정의
-    public static int[] dx = new int[]{1, -1,  0, 0}; //동 서
-    public static int[] dy = new int[]{0,  0, -1, 1}; //남 북
-
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        String commands = scanner.next(); 
+        scanner.close();
 
-        n = sc.nextInt();
+        int dirNum = 0; // 초기 방향 (북)
+        int x = 0, y = 0;
+        int[] dx = new int[]{0, -1, 0, 1}; 
+        int[] dy = new int[]{1, 0, -1, 0}; 
 
-        // 입력 방향에 따른 이동하는 반복문
-        while(n-- > 0) {
-            char cDir = sc.next().charAt(0); //방향
-            int dist = sc.nextInt(); //거리
-            
-            //방향에 따른 dir 숫자 정하기
-            int dir;
-            if(cDir == 'E')
-                dir = 0;
-            else if(cDir == 'W')
-                dir = 1;
-            else if(cDir == 'S')
-                dir = 2;
-            else
-                dir = 3;
-            
-            // 입력된 방향으로 dist 거리만큼 이동 후의 위치
-            x += dx[dir] * dist;
-            y += dy[dir] * dist;
+        for (char command : commands.toCharArray()) {
+            if (command == 'L') {
+                // 왼쪽으로 회전 (시계 반대 방향)
+                dirNum = (dirNum + 1) % 4;
+            } else if (command == 'R') {
+                // 오른쪽으로 회전 (시계 방향)
+                dirNum = (dirNum + 3) % 4;
+            } else if (command == 'F') {
+                // 현재 방향으로 이동
+                x += dx[dirNum];
+                y += dy[dirNum];
+            }
         }
-    
-        System.out.print(x + " " + y);
+
+        // 최종 위치 출력
+        System.out.println(x + " " + y);
     }
 }
+
 ```
 
 
@@ -108,4 +94,4 @@ public class Main {
 #### 배운점
 
 
-
+저번에는 동서남북으로 이동을 배웠다면 이번에는 바라보는 방향기준 90도 회전하는 법을 배웠다.
