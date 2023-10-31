@@ -36,16 +36,20 @@ public class Gclass<T> {
 ```
 
 
-> * public class Gclass<T>:  Gclass는 제네릭 클래스로 선언되며, 타입 매개변수인 T를 사용합니다.   
+> * **public class Gclass<`T``>** :  
+> Gclass는 제네릭 클래스로 선언되며, 타입 매개변수인 T를 사용합니다.   
 > 이렇게 정의된 T는 클래스 내부에서 임의의 데이터 타입으로 사용됩니다. 이로써 Gclass는 어떤 타입의 데이터도 다룰 수 있습니다.
 > 
-> * private T value;: 제네릭 타입 T를 가지는 프라이빗 인스턴스 변수 value를 선언합니다.  
+> * **private T value;** :  
+> 제네릭 타입 T를 가지는 프라이빗 인스턴스 변수 value를 선언합니다.  
 > 이 변수는 클래스 내에서 어떤 타입의 값을 저장할 수 있습니다.
 > 
-> * public Gclass(T value): 생성자는 T 타입의 값을 매개변수로 받아서 value 변수에 할당합니다.  
+> * **public Gclass(T value)** :  
+> 생성자는 T 타입의 값을 매개변수로 받아서 value 변수에 할당합니다.  
 > 저장할 값의 타입은 객체가 생성될 때 결정됩니다.
 > 
-> * public T getValue(): 이 메서드는 T 타입의 값을 반환하므로 객체가 저장한 데이터 타입에 따라 반환 타입이 결정됩니다.
+> * **public T getValue()** :  
+> 이 메서드는 T 타입의 값을 반환하므로 객체가 저장한 데이터 타입에 따라 반환 타입이 결정됩니다.
 
 <br>
 
