@@ -29,18 +29,18 @@ Optional<String> nonEmptyOptional = Optional.of("값이 있어요");
 Optional<String> emptyOptional = Optional.empty();
 ```
 
->Optional은 값의 존재 여부에 따라 두 가지 상태를 나타냅니다. 값을 포함하면 Optional 객체는 해당 값을 가지고 있으며, 값을 포함하지 않으면 >Optional.empty()를 사용하여 빈 Optional 객체를 생성합니다.
+> Optional은 값의 존재 여부에 따라 두 가지 상태를 나타냅니다. 값을 포함하면 Optional 객체는 해당 값을 가지고 있으며, 값을 포함하지 않으면 >Optional.empty()를 사용하여 빈 Optional 객체를 생성합니다.
 
 ### null 방지:
 
->Optional을 사용하면 메서드가 null을 반환하는 상황을 방지할 수 있습니다. 대신, 메서드가 빈 Optional을 반환하면 값을 포함하지 않음을 나타냅니다
+> Optional을 사용하면 메서드가 null을 반환하는 상황을 방지할 수 있습니다. 대신, 메서드가 빈 Optional을 반환하면 값을 포함하지 않음을 나타냅니다
 
 
 
 
 ### 값의 존재 여부 확인:
 
->isPresent() 메서드를 사용하여 Optional 객체가 값을 가지고 있는지 확인할 수 있습니다.
+> isPresent() 메서드를 사용하여 Optional 객체가 값을 가지고 있는지 확인할 수 있습니다.
 
 ```java
 if (nonEmptyOptional.isPresent()) {
@@ -53,18 +53,18 @@ if (nonEmptyOptional.isPresent()) {
 
 ### 값 추출:
 
->get() 메서드를 사용하여 Optional 객체에서 값을 추출할 수 있습니다. 그러나 get()을 호출하기 전에 isPresent()로 값을 확인하는 것이 좋습니다.
+> get() 메서드를 사용하여 Optional 객체에서 값을 추출할 수 있습니다. 그러나 get()을 호출하기 전에 isPresent()로 값을 확인하는 것이 좋습니다.
 
-```java
-if (nonEmptyOptional.isPresent()) {
-    String value = nonEmptyOptional.get();
-}
-```    
+> ```java
+> if (nonEmptyOptional.isPresent()) {
+>     String value = nonEmptyOptional.get();
+> }
+> ```    
 
 
 ### 값이 존재하지 않는 경우 대체 값 제공:
 
->orElse() 또는 orElseGet() 메서드를 사용하여 값이 존재하지 않는 경우 기본값을 제공할 수 있습니다.
+> orElse() 또는 orElseGet() 메서드를 사용하여 값이 존재하지 않는 경우 기본값을 제공할 수 있습니다.
 
 ```java
 String result = emptyOptional.orElse("기본값");
@@ -75,7 +75,7 @@ String result = emptyOptional.orElseGet(() -> "기본값을 생성하는 로직"
 
 ### 값이 존재하지 않는 경우 예외 던지기:
 
->orElseThrow() 메서드를 사용하여 값이 존재하지 않는 경우 원하는 예외를 던질 수 있습니다.
+> orElseThrow() 메서드를 사용하여 값이 존재하지 않는 경우 원하는 예외를 던질 수 있습니다.
 
 ```java
 String result = emptyOptional.orElseThrow(() -> new >NoSuchElementException("값이 없습니다."));
