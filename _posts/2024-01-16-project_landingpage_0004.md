@@ -54,7 +54,7 @@ reset.css 파일을 도입하여 초기 스타일을 표준화합니다.
 
 ![image](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/981602fb-85ed-489e-aeeb-dff59e8d406f)
 
-위 영역을 전부 header로 보고 진행하면 될것 같습니다. 제일 상단에 nav를 ,아래에는 p태그와 
+위 영역을 전부 header로 보고 진행하면 될것 같습니다. 제일 상단에 nav를 ,아래에는 h1태그와 p태그, 버튼, 이미지로 구성되는것 같습니다. 
 
 #### nav 
 
