@@ -54,7 +54,7 @@ reset.css 파일을 도입하여 초기 스타일을 표준화합니다.
 
 ![image](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/981602fb-85ed-489e-aeeb-dff59e8d406f)
 
-위 영역을 전부 header로 보고 진행하면 될것 같습니다.
+위 영역을 전부 header로 보고 진행하면 될것 같습니다. 제일 상단에 nav를 ,아래에는 p태그와 
 
 #### nav 
 
@@ -72,9 +72,9 @@ about섹션으로 하면 좋을것 같습니다. 저를 표현하는 이미지 �
 
 ![image](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/f18e277b-1c26-4b49-b3d6-9e48ea0cd937)
 
-여기는 projects섹션으로 하면 좋을것 같습니다. 전반적인 설명 p태그와 제가 진행했던 프로젝트 이미지를 넣고 css는 마우스 오버시 해당 git 레포지토리로 이동이 뜨는 애니메이션을 넣으면 더 좋을것 같습니다. 마찬가지로 이미지들은 flex 속성을 넣구요.
+여기는 projects섹션으로 하면 좋을것 같습니다. 전반적인 설명 p태그와 제가 진행했던 프로젝트 article 태그를 넣고 css는 마우스 오버시 해당 git 레포지토리로 이동이 뜨는 애니메이션을 넣으면 더 좋을것 같습니다. 마찬가지로 article과 이미지들은 flex 속성을 넣구요.
 
-현재까지 진행한 프로젝트가 별로 없기 때문에 나머지 이미지들은 api를 사용해서 꾸며볼 생각입니다.
+현재까지 진행한 프로젝트가 별로 없기 때문에 article 밑의 나머지 이미지들은 api를 사용해서 꾸며볼 생각입니다.
 
 ![image](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/63fdeb4a-7cef-4f50-b80b-e7b2110bd4ea)
 
