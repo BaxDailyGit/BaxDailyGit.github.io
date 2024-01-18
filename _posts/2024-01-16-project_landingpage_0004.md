@@ -60,7 +60,7 @@ reset.css 파일을 도입하여 초기 스타일을 표준화합니다.
 
 header의 제일 상단을 보면 Home, About, Support, Download가 있습니다. 
 
-저같은 경우에는 포트폴리오 랜딩페이지를 제작하기 때문에 Home, About, Projects, Download로 진행하고 페이지를 분할하지 않고 Home에서 About, Projects 섹션을 넣고 클릭시 동일페이지 해당섹션으로 이동하도록 해야겠습니다. Download는 단순히 Home 페이지를 출력하도록 해야겠습니다.
+저같은 경우에는 포트폴리오 랜딩페이지를 제작하기 때문에 Home, About, Projects, Download로 진행하고 페이지를 분할하지 않고 Home에서 About, Projects 아티클을 넣고 클릭시 동일페이지 해당 아티클로 이동하도록 해야겠습니다. Download는 단순히 Home 페이지를 출력하도록 해야겠습니다.
 
 또한 스크롤을 내리면 4개의 영역이 유지되도록 하면 좋을것 같습니다. 
 
@@ -68,22 +68,22 @@ header의 제일 상단을 보면 Home, About, Support, Download가 있습니다
 
 ![image](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/10df4025-6607-4a0f-9793-3ca741648975)
 
-about섹션으로 하면 좋을것 같습니다. 저를 표현하는 이미지 하나와 p태그로 이루면 될것입니다. 또한 flex 속성을 넣으면 되겠네요.
+about아티클로 하면 좋을것 같습니다. 저를 표현하는 이미지 하나와 p태그로 이루면 될것입니다. 또한 flex 속성을 넣으면 되겠네요.
 
 ![image](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/f18e277b-1c26-4b49-b3d6-9e48ea0cd937)
 
-여기는 projects섹션으로 하면 좋을것 같습니다. 전반적인 설명 p태그와 제가 진행했던 프로젝트 article 태그를 넣고 css는 마우스 오버시 해당 git 레포지토리로 이동이 뜨는 애니메이션을 넣으면 더 좋을것 같습니다. 마찬가지로 article과 이미지들은 flex 속성을 넣구요.
+여기는 projects아티클로 하면 좋을것 같습니다. 전반적인 설명 p태그와 제가 진행했던 프로젝트 article 태그를 넣고 css는 마우스 오버시 해당 git 레포지토리로 이동이 뜨는 애니메이션을 넣으면 더 좋을것 같습니다. 마찬가지로 article과 이미지들은 flex 속성을 넣구요.
 
 현재까지 진행한 프로젝트가 별로 없기 때문에 article 밑의 나머지 이미지들은 api를 사용해서 꾸며볼 생각입니다.
 
 ![image](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/63fdeb4a-7cef-4f50-b80b-e7b2110bd4ea)
 
-여기는 map섹션으로 하면 좋을것 같습니다.
+여기는 map아티클로 하면 좋을것 같습니다.
 지도는 카카오api를 사용하며 추가기능은 추후에 생각해 보겠습니다.
 
 ![image](https://github.com/BaxDailyGit/BaxDailyGit/assets/99312529/cc612e65-ea98-4a75-b0a1-5c0e2f2d4f72)
 
-여기는 email섹션으로 하면 좋을것 같습니다. 이미지와 다르게 입력란을 지우고 저의 이메일을 p태그로 넣으며 버튼을 누르면 이메일을 보내는 새창이 뜨도록 해야겠습니다.
+여기는 email 아티클로 하면 좋을것 같습니다. 이미지와 다르게 입력란을 지우고 저의 이메일을 p태그로 넣으며 버튼을 누르면 이메일을 보내는 새창이 뜨도록 해야겠습니다.
 
 * #### footer
 
