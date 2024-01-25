@@ -2,7 +2,7 @@
 layout: single
 published: true
 title:  "[프로젝트] 랜딩 페이지 레이아웃 계획"
-categories: landing-page
+categories: landingpage
 date: 2024-01-16 18:46:48
 toc: true
 toc_sticky: true

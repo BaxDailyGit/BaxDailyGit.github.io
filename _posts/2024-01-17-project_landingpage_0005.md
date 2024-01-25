@@ -2,8 +2,8 @@
 layout: single
 published: true
 title:  "[프로젝트] 랜딩 페이지 개발(1)"
-categories: landing-page
-date: 2024-01-16 18:46:48
+categories: landingpage
+date: 2024-01-25 17:14:18
 toc: true
 toc_sticky: true
 tag:   
