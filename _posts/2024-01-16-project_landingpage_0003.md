@@ -1,7 +1,7 @@
 ---
 layout: single
 published: true
-title:  "[프로젝트] 랜딩 페이지를 제작하기 앞서"
+title:  "[프로젝트] 포트폴리오 랜딩 페이지를 제작하기 앞서"
 categories: landingpage
 date: 2024-01-16 15:12:00
 toc: true
