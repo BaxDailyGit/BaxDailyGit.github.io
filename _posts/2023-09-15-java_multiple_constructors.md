@@ -120,7 +120,7 @@ public class Main {
 
 # 메서드 오버로딩 (Method Overloading)
 
-이름이 같지만 매개변수가 다르거나 혹은 리턴타입이 다른 함수를 메서드 오버로딩이라고 합니다.
+이름이 같지만 매개변수의 개수나 매개변수의 타입이 다른경우에는 메서드 오버로딩이라고 합니다.
 
 ```java
 public class CarC {
@@ -130,13 +130,12 @@ public class CarC {
         speed++;
     }
     
-    public Integer speedUP(Integer speed){  
+    public void speedUP(Integer speed){  
         this.speed += speed;
-        return this.speed;
     }
 }
 ```
-함수 이름이 같으면 에러가 나지만 위 코드처럼 대신 매개변수가 다르거나 혹은 리턴타입이 다른경우 에러가 나지 않습니다.
+함수 이름이 같으면 에러가 나지만 위 코드처럼 대신 매개변수의 개수나 매개변수의 타입이 다른경우 에러가 나지 않습니다.
 
 ```java
 public class Main {
@@ -145,7 +144,7 @@ public class Main {
         Car car = new car();
 
         car.speedUp(); //void speedUp() 함수
-        car.speedUp(1); //Integer speedUP(Integer speed)함수
+        car.speedUp(1); //void speedUP(Integer speed)함수
     }
 }
 ```
