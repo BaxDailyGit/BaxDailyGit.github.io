@@ -1,7 +1,7 @@
 ---
 layout: single
 published: true
-title:  "[프로젝트] 포트폴리오 랜딩 페이지 html작성"
+title:  "[포트폴리오 랜딩 페이지] html작성"
 categories: landingpage
 date: 2024-01-25 17:14:18
 toc: true
@@ -16,3 +16,4 @@ tag:
 
 ## 포트폴리오 랜딩 페이지 html작성
 
+-작성중-

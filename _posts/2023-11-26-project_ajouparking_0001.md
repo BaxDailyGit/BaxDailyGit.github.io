@@ -1,7 +1,7 @@
 ---
 layout: single
 published: true
-title:  "[프로젝트]아주파킹 제작 시작"
+title:  "[아주파킹] 제작 시작"
 categories: ajouparking
 date: 2023-11-26 16:12:00
 toc: true
