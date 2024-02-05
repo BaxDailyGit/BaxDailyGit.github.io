@@ -17,8 +17,8 @@ last_modified_at: 2023-10-12
 -   보충역으로 산업기능요원을 희망합니다(구직중)
 - 📫 email: tmdwls8387@ajou.ac.kr
 - ✍️ blog: [https://baxdailygit.github.io/](https://baxdailygit.github.io/)
-- github: [https://github.com/BaxDailyGit](https://github.com/BaxDailyGit)
-- 📑포트폴리오: [https://baxdailygit.github.io/landing-page/pages](https://baxdailygit.github.io/landing-page/pages)
+- 😼 github: [https://github.com/BaxDailyGit](https://github.com/BaxDailyGit)
+- 📑 portfolio: [https://baxdailygit.github.io/landing-page/pages](https://baxdailygit.github.io/landing-page/pages)
 <br> 
 
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" width="2%" /> 공부중인 Skills.
