@@ -5,36 +5,13 @@ excerpt: "Infomation About me "
 last_modified_at: 2023-10-12
 ---
 
-안녕하세요. **백승진**입니다.
-<br> 
-현재 신입 백엔드 개발자가 되기 위해 공부중입니다.   
-
-<br> 
-
-
--   24년 2월에 학부를 졸업하였습니다.
--   보충역으로 산업기능요원을 희망합니다(구직중)
-
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" width="2%" /> 공부중인 Skills.
-
-
-공부중인 Skills.
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) 
-![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)  ![spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white) 
-
 <br>
 
 
 <div class="about-content">
     <h2>안녕하세요. 백승진입니다.</h2>
-    <p>현재 신입 백엔드 개발자가 되기 위해 공부중입니다. </p>
-    <h3>My Interests</h3>
-    <ul>
-        <li>Technology</li>
-        <li>Literature</li>
-        <li>Travel</li>
-        <li>Photography</li>
-    </ul>
+    <p>신입 백엔드 개발자가 되기 위해 공부중입니다. </p>
+    <p>24년 2월에 학부를 졸업하였으며 현재 보충역으로 산업기능요원을 희망합니다</p>
     <h3>Skills in Progress</h3>
     <p>
         <img src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"/>
