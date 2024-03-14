@@ -30,6 +30,53 @@ last_modified_at: 2023-10-12
 
 --  추가 예정 -- 
 
+<div class="about-content">
+    <h2>About Me</h2>
+    <p>안녕하세요. Hello there! I'm John Doe, a passionate blogger who loves to write about technology, literature, and everything in between.</p>
+    <p>I believe in the power of words to change the world, and through this blog, I aim to share my thoughts and ideas with the world.</p>
+    <h3>My Interests</h3>
+    <ul>
+        <li>Technology</li>
+        <li>Literature</li>
+        <li>Travel</li>
+        <li>Photography</li>
+    </ul>
+    <h3>Contact Me</h3>
+    <p>Feel free to reach out to me via email at <a href="mailto:john.doe@example.com">john.doe@example.com</a>.</p>
+</div>
+
+<style>
+    .about-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .about-content h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .about-content h3 {
+        color: #666;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .about-content p {
+        color: #777;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    .about-content ul {
+        margin-left: 20px;
+    }
+    .about-content li {
+        color: #888;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+</style>
+
 <br><br><br><br><br><br><br><br><br><br>
 
 
