@@ -16,23 +16,23 @@ last_modified_at: 2023-10-12
         <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
     </p>
     <h3>Contact Me</h3>
-    <p>
+    <p style="font-size: 14px;">
         <img src="https://img.shields.io/badge/이메일-ffffff?style=flat-square&logo=gmail&logoColor=black"/>:
         <a href="mailto:tmdwls8387@ajou.ac.kr">tmdwls8387@ajou.ac.kr</a>
     </p>
-    <p>
+    <p style="font-size: 14px;">
         <a href="https://baxdailygit.github.io/">
             <img src="https://img.shields.io/badge/깃허브-ffffff?style=flat-square&logo=github&logoColor=black"/>
         </a>:
         <a href="https://github.com/BaxDailyGit">https://github.com/BaxDailyGit</a>
     </p>
-    <p>
+    <p style="font-size: 14px;">
         <a href="https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61?pvs=4">
             <img src="https://img.shields.io/badge/Resume-ffffff?style=flat-square&logo=notion&logoColor=black"/>
         </a>:
         <a href="https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61">https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61</a>
     </p>
-    <p>
+    <p style="font-size: 14px;">
         <a href="https://baxdailygit.github.io/landing-page/pages">
             <img src="https://img.shields.io/badge/포트폴리오-ffffff?style=flat-square&logo=proton&logoColor=black"/>
         </a>:
