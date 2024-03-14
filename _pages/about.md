@@ -7,7 +7,6 @@ last_modified_at: 2023-10-12
 
 <br>
 
-
 <div class="about-content">
     <h2>안녕하세요. 백승진입니다.</h2>
     <p>신입 백엔드 개발자가 되기 위해 공부중입니다. </p>
@@ -73,7 +72,6 @@ last_modified_at: 2023-10-12
         line-height: 1.6;
     }
 </style>
-
 
 <br><br><br><br><br><br><br><br><br><br>
 
