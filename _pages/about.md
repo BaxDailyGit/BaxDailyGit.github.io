@@ -5,8 +5,6 @@ excerpt: "Infomation About me "
 last_modified_at: 2023-10-12
 ---
 
-<br>
-
 <div class="about-content">
     <h2>안녕하세요. 백승진입니다.</h2>
     <p>신입 백엔드 개발자가 되기 위해 공부중입니다. </p>
@@ -19,24 +17,24 @@ last_modified_at: 2023-10-12
     </p>
     <h3>Contact Me</h3>
     <p>
-        <img src="https://img.shields.io/badge/이메일-171717?style=flat-square&logo=gmail&logoColor=white"/>:
+        <img src="https://img.shields.io/badge/이메일-ffffff?style=flat-square&logo=gmail&logoColor=black"/>:
         <a href="mailto:tmdwls8387@ajou.ac.kr">tmdwls8387@ajou.ac.kr</a>
     </p>
     <p>
         <a href="https://baxdailygit.github.io/">
-            <img src="https://img.shields.io/badge/깃허브-171717?style=flat-square&logo=github&logoColor=white"/>
+            <img src="https://img.shields.io/badge/깃허브-ffffff?style=flat-square&logo=github&logoColor=black"/>
         </a>:
         <a href="https://github.com/BaxDailyGit">https://github.com/BaxDailyGit</a>
     </p>
     <p>
         <a href="https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61?pvs=4">
-            <img src="https://img.shields.io/badge/Resume-000000?style=flat-square&logo=notion&logoColor=white"/>
+            <img src="https://img.shields.io/badge/Resume-ffffff?style=flat-square&logo=notion&logoColor=black"/>
         </a>:
         <a href="https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61">https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61</a>
     </p>
     <p>
         <a href="https://baxdailygit.github.io/landing-page/pages">
-            <img src="https://img.shields.io/badge/포트폴리오-171717?style=flat-square&logo=proton&logoColor=white"/>
+            <img src="https://img.shields.io/badge/포트폴리오-ffffff?style=flat-square&logo=proton&logoColor=black"/>
         </a>:
         <a href="https://baxdailygit.github.io/landing-page/pages">https://baxdailygit.github.io/landing-page/pages</a>
     </p>
