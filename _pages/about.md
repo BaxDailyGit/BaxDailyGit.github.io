@@ -14,11 +14,6 @@ last_modified_at: 2023-10-12
 
 -   24년 2월에 학부를 졸업하였습니다.
 -   보충역으로 산업기능요원을 희망합니다(구직중)
-- <img src="https://img.shields.io/badge/이메일-171717?style=flat-square&logo=gmail&logoColor=white"/>: tmdwls8387@ajou.ac.kr
-- <a href="https://baxdailygit.github.io/"><img src="https://img.shields.io/badge/깃허브-171717?style=flat-square&logo=github&logoColor=white"/></a>: https://github.com/BaxDailyGit
-- <a href="https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61?pvs=4"><img src="https://img.shields.io/badge/Resume-000000?style=flat-square&logo=notion&logoColor=white"/></a>: https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61
-- <a href="https://baxdailygit.github.io/landing-page/pages"><img src="https://img.shields.io/badge/포트폴리오-171717?style=flat-square&logo=proton&logoColor=white"/></a>: https://baxdailygit.github.io/landing-page/pages
-<br> 
 
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" width="2%" /> 공부중인 Skills.
 
@@ -40,7 +35,7 @@ last_modified_at: 2023-10-12
         <li>Travel</li>
         <li>Photography</li>
     </ul>
-        <h3>Contact Me</h3>
+    <h3>Contact Me</h3>
     <p>
         <img src="https://img.shields.io/badge/이메일-171717?style=flat-square&logo=gmail&logoColor=white"/>:
         <a href="mailto:tmdwls8387@ajou.ac.kr">tmdwls8387@ajou.ac.kr</a>
@@ -68,7 +63,6 @@ last_modified_at: 2023-10-12
 <style>
     .about-content {
         max-width: 600px;
-        margin: 0 auto;
     }
     .about-content h2 {
         color: #333;
@@ -96,6 +90,7 @@ last_modified_at: 2023-10-12
         line-height: 1.6;
     }
 </style>
+
 
 <br><br><br><br><br><br><br><br><br><br>
 
