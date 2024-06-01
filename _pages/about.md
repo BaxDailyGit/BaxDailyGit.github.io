@@ -27,10 +27,10 @@ last_modified_at: 2023-10-12
         <a href="https://github.com/BaxDailyGit">https://github.com/BaxDailyGit</a>
     </p>
     <p style="font-size: 14px;">
-        <a href="https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61?pvs=4">
-            <img src="https://img.shields.io/badge/Resume-ffffff?style=flat-square&logo=notion&logoColor=black"/>
+        <a href="https://baxdailygit.github.io/resume/">
+            <img src="https://img.shields.io/badge/Resume-ffffff?style=flat-square&logo=resend&logoColor=black"/>
         </a>:
-        <a href="https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61">https://seungjinbaek.notion.site/1b072c03b8ff44dc825d082f4fdb0e61</a>
+        <a href="https://baxdailygit.github.io/resume/">https://baxdailygit.github.io/resume/</a>
     </p>
     <p style="font-size: 14px;">
         <a href="https://baxdailygit.github.io/landing-page/pages">
