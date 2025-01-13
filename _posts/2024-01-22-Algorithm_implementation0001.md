@@ -6,6 +6,8 @@ categories: Algorithm
 date: 2024-01-22 19:30:00
 toc: true
 toc_sticky: true
+header:
+  teaser: assets/images/algorithm.png
 ---
 
 ## GCD와 LCM
