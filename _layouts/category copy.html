@@ -2,15 +2,10 @@
 layout: default
 ---
 <ul class="posts-list">
-
+  
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
-    <li class="category__post">
-      <div class="category__teaser">
-        {% if post.header.teaser %}
-          <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
-        {% endif %}
-      </div>
+    <li>
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
