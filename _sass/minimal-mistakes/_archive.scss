@@ -89,11 +89,22 @@
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
-
+  
+  display: flex;
+  justify-content: center;
+  
+  background-color: mix(rgb(122, 122, 122), $background-color, 10%);
+  backdrop-filter: blur(10px);
+  width: 100%; 
+  max-height: 10em;
+  margin-bottom: 5px;
+  
   img {
-    width: 100%;
+      margin: auto;
+      position: relative;  //absolute;
+      object-fit: fill;
   }
-}
+  }
 
 .archive__item-caption {
   position: absolute;
@@ -132,25 +143,31 @@
     height: auto;
 
     @media screen and (min-width: 600px) {
-      .archive__item-teaser {
-        position: relative;
-        border-radius: $border-radius;
+    .archive__item-teaser_list {
+      position: relative;
+      border-radius: $border-radius;
+      overflow: hidden;
+      margin-right: 0.5em;
+      display: inline;
+      justify-content: center;
+      float : left;
+      margin-bottom: 5px;
+
+      background-color: mix(rgb(122, 122, 122), $background-color, 10%);
+      backdrop-filter: blur(10px);
+      width: 15em;
+      max-height: 130px;
+      text-align: center;
+      vertical-align: middle;
+
+      img {
+        margin: auto;
+        position: relative; //absolute;
+        object-fit: contain;
         overflow: hidden;
-        
-        display: flex;
         justify-content: center;
-        
-        background-color: mix(rgb(122, 122, 122), $background-color, 10%);
-        backdrop-filter: blur(10px);
-        width: 100%; 
-        max-height: 10em;
-        margin-bottom: 5px;
-        
-        img {
-            margin: auto;
-            position: relative;  //absolute;
-            object-fit: fill;
-        }
+        transition: all 0.3s linear; //hover 시간 조정
+      }
 
       @include breakpoint($small) {
         min-height: 130px;
