@@ -56,6 +56,13 @@
                     {% endif %}
                 {% endfor %}
               </ul>   
+              <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Error" %}    
+                        <li><a href="/categories/#Error" class=""> - Error해결({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+              </ul>  
 
           <span class="nav__sub-title">Programming</span> <!--Programming--> 
             <ul>
@@ -145,14 +152,7 @@
                   {% endfor %}
               </ul>
               
-              <span class="nav__sub-title">Error</span> <!--Error--> 
-              <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Error" %}    
-                        <li><a href="/categories/#Error" class=""> - Error해결({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-              </ul>   
+              
         </li>
     </ul>
   </nav>
