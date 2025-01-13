@@ -6,6 +6,8 @@ categories: Database
 date: 2023-10-19 21:04:00
 toc: true
 toc_sticky: true
+header:
+  teaser: assets/images/programmers.png
 tag:   
   - 데이터베이스
   - Database
