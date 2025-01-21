@@ -164,6 +164,8 @@
           overflow: hidden;
           justify-content: center;
           transition: all 0.3s linear;
+          width: 15em;
+          max-height: 120px;
         }
   
         @include breakpoint($small) {
