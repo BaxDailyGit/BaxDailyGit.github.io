@@ -9,4 +9,3 @@
 
 블로그 링크입니다. https://baxdailygit.github.io
 
-방문해주셔서 감사합니다 :)
