@@ -2,7 +2,7 @@
 layout: single
 published: true
 title:  "[코드트리 챌린지] 코드트리 두번째 실력진단평가"
-categories: Algorithm-Codetree
+categories: Codetree
 date: 2023-09-18 23:55:00
 toc: true
 toc_sticky: true
