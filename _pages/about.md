@@ -32,12 +32,12 @@ last_modified_at: 2023-10-12
         </a>:
         <a href="https://baxdailygit.github.io/resume/">https://baxdailygit.github.io/resume/</a>
     </p>
-    <p style="font-size: 14px;">
+    <!-- <p style="font-size: 14px;">
         <a href="https://baxdailygit.github.io/landing-page/pages">
             <img src="https://img.shields.io/badge/포트폴리오-ffffff?style=flat-square&logo=proton&logoColor=black"/>
         </a>:
         <a href="https://baxdailygit.github.io/landing-page/pages">https://baxdailygit.github.io/landing-page/pages</a>
-    </p>
+    </p> -->
 </div>
 
 <style>
