@@ -6,6 +6,8 @@ categories: Algorithm
 date: 2024-01-27 19:10:00
 toc: true
 toc_sticky: true
+header:
+  teaser: assets/images/algorithm.png
 ---
 
 ## 방향벡터 dx, dy 기법
