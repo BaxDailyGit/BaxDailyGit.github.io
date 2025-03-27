@@ -6,9 +6,10 @@ last_modified_at: 2023-10-12
 ---
 
 <div class="about-content">
-    <h2>안녕하세요. 백승진입니다.</h2>
-    <p>신입 백엔드 개발자가 되기 위해 공부중입니다. </p>
-    <p>24년 2월에 학부를 졸업하였으며 현재 보충역으로 산업기능요원을 희망합니다</p>
+<h2>안녕하세요, 백승진입니다.</h2>
+<p>백엔드 개발자로 성장하기 위해 공부 중입니다.</p>
+<p>소프트웨어학과와 물리학을 전공하고 학부를 졸업하였으며, 현재 보충역으로 산업기능요원으로 복무하고자 합니다.</p>
+
     <h3>Skills</h3>
     <p>
         <img src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"/>
