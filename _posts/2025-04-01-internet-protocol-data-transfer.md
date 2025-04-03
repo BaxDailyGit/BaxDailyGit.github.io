@@ -2,7 +2,6 @@
 layout: single
 published: true
 title:  "인터넷과 프로토콜 개념 정리 - 회선 교환 vs 패킷 교환 방식 비교"
-description: "인터넷과 네트워크의 기본 개념부터 HTTP, TCP/IP, DNS와 같은 프로토콜 개념, 그리고 데이터 전송 방식(회선 교환과 패킷 교환)의 차이를 설명합니다."
 categories: network
 date: 2025-04-01 18:37:00
 toc: true
@@ -17,7 +16,7 @@ tag:
   - 회선 교환
   - 패킷 교환
   - TCP/IP
-
+description: "인터넷과 네트워크의 기본 개념부터 HTTP, TCP/IP, DNS와 같은 프로토콜 개념, 그리고 데이터 전송 방식(회선 교환과 패킷 교환)의 차이를 설명합니다."
 ---
 
 # 인터넷과 프로토콜 개념 정리 - 회선 교환 vs 패킷 교환 방식 비교
