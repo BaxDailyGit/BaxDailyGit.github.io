@@ -2,12 +2,15 @@
 layout: single
 published: true
 title:  "[DB]프로그래머스 SELECT 20문제 풀이 모음"
+permalink: /database/programmers-select-20-sql-problems
 categories: Database
 date: 2023-10-19 21:04:00
 toc: true
 toc_sticky: true
 header:
+  title:  "[DB]프로그래머스 SELECT 20문제 풀이 모음"
   teaser: assets/images/programmers.png
+excerpt: "프로그래머스 SELECT 20문제를 풀고 배운점을 기록합니다."
 tag:   
   - 데이터베이스
   - Database
