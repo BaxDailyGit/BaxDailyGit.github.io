@@ -36,7 +36,9 @@
 ![image](https://github.com/user-attachments/assets/a13e37da-a211-4c61-9892-80a5271bb2b0)
 ![image](https://github.com/user-attachments/assets/802c8119-086c-4449-995c-d6d38d49ff3f)
 ![Editor _ Mermaid Chart-2025-06-04-193931](https://github.com/user-attachments/assets/94aa0f41-e270-4552-88f5-818ab83cc1c3)
-![image](https://github.com/user-attachments/assets/76859032-2969-493e-8c28-4e1724cc6fbe)
+
+<img width="676" alt="image" src="https://github.com/user-attachments/assets/9c855f23-15c6-461d-90eb-4f4f3a38d2ea" />
+
 ![image](https://github.com/user-attachments/assets/417339c9-dae4-4634-b142-1bca3e97499c)
 ![image](https://github.com/user-attachments/assets/08263032-d786-4cba-815e-4ffc6409f4bd)
 ![image](https://github.com/user-attachments/assets/39175bc1-baf5-4838-849f-21db114d1f05)
