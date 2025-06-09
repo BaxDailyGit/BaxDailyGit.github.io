@@ -44,6 +44,9 @@
 ![image](https://github.com/user-attachments/assets/866968f2-457a-4adc-a568-7f8c9d5d46fa)
 ![image](https://github.com/user-attachments/assets/5c7876aa-f861-4ba6-a24b-e7c14663d972)
 ![image](https://github.com/user-attachments/assets/fdad2b08-eeed-4ade-82a1-e67fac2d9faa)
+![langsmith_monitor](https://github.com/user-attachments/assets/c971a7c3-41b7-4e00-9d23-065513a86c07)
+
+
 ![image](https://github.com/user-attachments/assets/0acb0399-d0d5-4f17-9f4d-d3712c203cee)
 ![image](https://github.com/user-attachments/assets/d5a2fd39-a05c-4d56-a74d-c177e0c013c6)
 ![image](https://github.com/user-attachments/assets/905a94aa-f811-41dd-a395-5b5629383b15)
