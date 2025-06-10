@@ -38,12 +38,17 @@
 ![Editor _ Mermaid Chart-2025-06-04-193931](https://github.com/user-attachments/assets/94aa0f41-e270-4552-88f5-818ab83cc1c3)
 
 <img width="676" alt="image" src="https://github.com/user-attachments/assets/9c855f23-15c6-461d-90eb-4f4f3a38d2ea" />
-
+## UMAP 차원축소 시각화
 ![image](https://github.com/user-attachments/assets/417339c9-dae4-4634-b142-1bca3e97499c)
-![image](https://github.com/user-attachments/assets/08263032-d786-4cba-815e-4ffc6409f4bd)
+## 진단 정확도 개선 전후
+![image](https://github.com/user-attachments/assets/f08c8076-dc61-4204-a4c2-a4dbb3c74fae)
+
+
 ![image](https://github.com/user-attachments/assets/866968f2-457a-4adc-a568-7f8c9d5d46fa)
 ![image](https://github.com/user-attachments/assets/5c7876aa-f861-4ba6-a24b-e7c14663d972)
+## Grafana
 ![image](https://github.com/user-attachments/assets/fdad2b08-eeed-4ade-82a1-e67fac2d9faa)
+## LangSmith
 ![langsmith_monitor](https://github.com/user-attachments/assets/c971a7c3-41b7-4e00-9d23-065513a86c07)
 
 
