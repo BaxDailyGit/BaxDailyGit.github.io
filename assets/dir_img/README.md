@@ -51,7 +51,8 @@
 ![grafana](https://github.com/user-attachments/assets/2f59a42e-4593-47d3-97ee-06f333bd9183)
 
 ## LangSmith
-![langsmith_monitor](https://github.com/user-attachments/assets/c971a7c3-41b7-4e00-9d23-065513a86c07)
+![langsmith_monitor](https://github.com/user-attachments/assets/da8fcde5-3bef-4d20-9e31-82833c0b930f)
+
 
 
 ![image](https://github.com/user-attachments/assets/0acb0399-d0d5-4f17-9f4d-d3712c203cee)
