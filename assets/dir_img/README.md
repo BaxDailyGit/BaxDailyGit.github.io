@@ -60,3 +60,10 @@
 ![image](https://github.com/user-attachments/assets/d5a2fd39-a05c-4d56-a74d-c177e0c013c6)
 ![image](https://github.com/user-attachments/assets/905a94aa-f811-41dd-a395-5b5629383b15)
 
+
+## DATAWAREHOUSE
+
+![image](https://github.com/user-attachments/assets/7f52d1fb-1ecf-43cd-820b-2d3dc533d6e7)
+![image](https://github.com/user-attachments/assets/b3bf8d22-b425-41db-afce-4971ff0db492)
+![image](https://github.com/user-attachments/assets/c6144cf4-4c87-4f49-8678-54db1c4693d0)
+
