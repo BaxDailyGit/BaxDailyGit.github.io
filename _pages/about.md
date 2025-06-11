@@ -6,78 +6,144 @@ last_modified_at: 2023-10-12
 ---
 
 <div class="about-content">
-<h2>안녕하세요, 백승진입니다.</h2>
-<p>백엔드 개발자로 성장하기 위해 공부 중입니다.</p>
-<p>소프트웨어학과와 물리학을 전공하고 학부를 졸업하였으며, 현재 보충역으로 산업기능요원으로 복무하고자 합니다.</p>
-
-    <h3>Skills</h3>
+    <h2>안녕하세요, 백승진입니다 👋</h2>
     <p>
-        <img src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
+        저는 <strong>풀스택 데이터 엔지니어를 지향</strong>하며, 클라우드 인프라 및 AI 애플리케이션을 위한 데이터 파이프라인 최적화에 관심을 가지고 있습니다.</p>
+    <p>
+        데이터의 수집부터 가공, 저장, 분석, 그리고 활용에 이르는 전 과정에 걸쳐 효율적인 시스템을 구축하는 것에 흥미를 느낍니다. 특히, 대용량 데이터를 처리하고 AI 모델을 서비스에 적용하는것을 즐기며, 사용자에게 실질적인 가치를 제공하는 AI 기반 솔루션 개발에 기여하고 싶습니다.
     </p>
-    <h3>Contact Me</h3>
-    <p style="font-size: 14px;">
-        <img src="https://img.shields.io/badge/이메일-ffffff?style=flat-square&logo=gmail&logoColor=black"/>:
-        <a href="mailto:tmdwls8387@ajou.ac.kr">tmdwls8387@ajou.ac.kr</a>
-    </p>
-    <p style="font-size: 14px;">
-        <a href="https://baxdailygit.github.io/">
-            <img src="https://img.shields.io/badge/깃허브-ffffff?style=flat-square&logo=github&logoColor=black"/>
-        </a>:
-        <a href="https://github.com/BaxDailyGit">https://github.com/BaxDailyGit</a>
-    </p>
-    <!-- <p style="font-size: 14px;">
-        <a href="https://baxdailygit.github.io/resume/">
-            <img src="https://img.shields.io/badge/Resume-ffffff?style=flat-square&logo=resend&logoColor=black"/>
-        </a>:
-        <a href="https://baxdailygit.github.io/resume/">https://baxdailygit.github.io/resume/</a>
-    </p> -->
-    <!-- <p style="font-size: 14px;">
-        <a href="https://baxdailygit.github.io/landing-page/pages">
-            <img src="https://img.shields.io/badge/포트폴리오-ffffff?style=flat-square&logo=proton&logoColor=black"/>
-        </a>:
-        <a href="https://baxdailygit.github.io/landing-page/pages">https://baxdailygit.github.io/landing-page/pages</a>
-    </p> -->
-</div>
-
-<style>
-    .about-content {
-        max-width: 600px;
-    }
-    .about-content h2 {
-        color: #333;
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    .about-content h3 {
-        color: #666;
-        font-size: 20px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-    .about-content p {
-        color: #777;
-        font-size: 16px;
-        line-height: 1.6;
-        margin-bottom: 15px;
-    }
-    .about-content ul {
-        margin-left: 20px;
-    }
-    .about-content li {
-        color: #888;
-        font-size: 16px;
-        line-height: 1.6;
-    }
-</style>
-
-<br><br><br><br><br><br><br><br><br><br>
-
-
-
-**회고록 리스트**
-
-|번호	  |제목|
-|---|---|
-|1|[2023년, 대학교 마지막 학기를 어떻게 보낼까?](https://baxdailygit.github.io/retrospect/review_start/)|
+    <p>
+    소프트웨어학과 물리학을 전공하였으며, 현재 보충역  <strong>산업기능요원</strong> 복무를 통해 실제 개발 경험을 쌓아가고자 합니다.</p>
+    <h3>기술 스택 및 경험</h3>
+    <p>다양한 프로젝트를 수행하며 여러 기술 스택을 경험했습니다.</p>
+    <table>
+      <tr>
+        <td width="200">
+          <div>
+            • Framework<br>
+              <img alt="Springboot 3.2.5" src="https://img.shields.io/badge/Springboot-6DB33F.svg?&style=plastic-square&logo=springboot&logoColor=white"/><br>
+              <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-005571.svg?&style=plastic-square&logo=fastapi&logoColor=white"/><br>
+            <br>
+          </div>
+        </td>
+        <td width="200">
+          <div>
+            • ORM<br>
+              <img src="https://img.shields.io/badge/Spring Data JPA-6DB33F?style=plastic-square&logo=Spring-Data-JPA&logoColor=white"/><br>
+              <img src="https://img.shields.io/badge/SQLAlchemy-4584b6?style=plastic-square&logo=SQLAlchemy&logoColor=white"/><br>
+            <br>
+          </div>
+        </td>
+        <td width="200">
+          <div>
+            • Security<br>
+              <img alt="Spring Security" src="https://img.shields.io/badge/Spring Security-6DB33F.svg?&style=plastic-square&logo=spring-security&logoColor=white"/><br>
+              <img alt="JWT" src="https://img.shields.io/badge/JWT-141414.svg?&style=plastic-square&logo=jsonwebtokens&logoColor=white"/> <img alt="OAuth2" src="https://img.shields.io/badge/OAuth2-626262.svg?&style=plastic-square&logo=oauth&logoColor=white"/><br>
+             <br>
+          </div>
+        </td>   
+        <td width="200">
+          <div>
+            • RDBMS<br>
+              <img src="https://img.shields.io/badge/MySQL-00758F?style=plastic-square&logo=MySQL&logoColor=white"/><br>
+              <img src="https://img.shields.io/badge/H2-4479A1?style=plastic-square&logoColor=white"/><br>
+            <br>
+          </div>
+        </td>
+        <td width="200">
+          <div>
+            • In-Memory<br>
+              <img alt="Redis" src="https://img.shields.io/badge/Redis-DC382D.svg?&style=plastic-square&logo=redis&logoColor=white"/><br>
+            <br>
+            <br>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td width="200">
+          <div>
+            • Proxy Server<br>
+              <img alt="Nginx" src="https://img.shields.io/badge/Nginx-009639.svg?&style=plastic-square&logo=nginx&logoColor=white"/><br>
+            <br>
+            <br>
+          </div>
+        </td> 
+        <td width="200">
+          <div>
+            • Container<br>
+              <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED.svg?&style=plastic-square&logo=docker&logoColor=white"/><br>
+            <br>
+            <br>
+          </div>
+        </td>      
+        <td width="200">
+          <div>
+            • Auto Deploy<br>
+              <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub Actions-2088FF.svg?&style=plastic-square&logo=github-actions&logoColor=white"/><br>
+              <img alt="AWS CodeDeploy" src="https://img.shields.io/badge/CodeDeploy-FF9900.svg?&style=plastic-square&logo=amazoncodedeploy&logoColor=white"/><br>
+              <img alt="Amazon S3" src="https://img.shields.io/badge/S3-569A31.svg?&style=plastic-square&logo=Amazon-S3&logoColor=white"/> <img alt="Amazon ECR" src="https://img.shields.io/badge/ECR-FF9900.svg?&style=plastic-square&logo=amazonecr&logoColor=white"/><br>
+          </div>
+        </td>
+        <td width="200">
+          <div>
+            • Monitoring<br>
+              <img alt="Grafana" src="https://img.shields.io/badge/Grafana-F46800.svg?&style=plastic-square&logo=grafana&logoColor=white"/><br>
+              <img alt="Prometheus" src="https://img.shields.io/badge/Prometheus-E6522C.svg?&style=plastic-square&logo=prometheus&logoColor=white"/><br>
+              <img alt="CloudWatch" src="https://img.shields.io/badge/CloudWatch-FF4F8B.svg?&style=plastic-square&logo=amazon-cloudwatch&logoColor=white"/><br>
+          </div>
+        </td>
+        <td width="200">
+          <div>
+            • Other AWS service<br>
+              <img alt="Amazon EC2" src="https://img.shields.io/badge/EC2-FF9900.svg?&style=plastic-square&logo=amazonec2&logoColor=white"/><br>
+              <img alt="Amazon RDS" src="https://img.shields.io/badge/RDS-527FFF.svg?&style=plastic-square&logo=Amazon-RDS&logoColor=white"/><br>
+              <img alt="Amazon ElastiCache" src="https://img.shields.io/badge/ElastiCache-527FFF.svg?&style=plastic-square&logo=amazon-elasticache&logoColor=white"/><br>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td width="200">
+          <div>
+             • Data<br>
+               <img alt="Amazon Glue" src="https://img.shields.io/badge/Glue-8C4FFF.svg?&style=plastic-square&logo=amazonglue&logoColor=white"/><br>
+               <img alt="Amazon Athena" src="https://img.shields.io/badge/Athena-8C4FFF.svg?&style=plastic-square&logo=amazonathena&logoColor=white"/><br>
+               <img alt="Amazon QuickSight" src="https://img.shields.io/badge/QuickSight-8C4FFF.svg?&style=plastic-square&logo=amazonquicksight&logoColor=white"/><br>
+          </div>
+        </td> 
+        <td width="200">
+          <div>
+             • Langchain Products<br>
+               <img alt="LangChain" src="https://img.shields.io/badge/langchain-1C3C3C.svg?&style=plastic-square&logo=langchain&logoColor=white"/><br><br><br>
+          </div>
+        </td>      
+        <td width="200">
+          <div>
+             • Vector Store<br>
+               <img alt="pinecone" src="https://img.shields.io/badge/pinecone-141414.svg?&style=plastic-square&logo=pinecone&logoColor=white"/><br>
+             <br>
+             <br>
+          </div>
+        </td>
+        <td width="200">
+          <div>
+             • ML model serving<br>
+               <img alt="Amazon SageMaker" src="https://img.shields.io/badge/SageMaker-3a9f88.svg?&style=plastic-square&logo=amazonaws&logoColor=white"/><br>
+             <br>
+             <br>
+          </div>
+        </td>
+        <td width="200">
+          <div>
+             • Frontend<br>
+               <img alt="React JS" src="https://img.shields.io/badge/React JS-56C5F7.svg?&style=plastic-square&logo=React&logoColor=white"/><br>
+               <img alt="Vite" src="https://img.shields.io/badge/vite-646CFF.svg?&style=plastic-square&logo=Vite&logoColor=white"/><br>
+             <br>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <p>이 외에도 필요에 따라 새로운 기술을 학습하고 적용하는 데 주저하지 않습니다.</p>
