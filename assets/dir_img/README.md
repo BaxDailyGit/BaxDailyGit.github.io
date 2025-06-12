@@ -32,46 +32,46 @@
 # 모찌케어
 ![babycareai-mochcare](https://github.com/user-attachments/assets/5150a8cd-f3dd-4105-8ceb-d5d656bd2024)
 
-![image](https://github.com/user-attachments/assets/9bb221b5-14bb-47db-8c38-98d7acc5275b)
-![image](https://github.com/user-attachments/assets/7162b51d-be52-4aea-bfcd-bb04928a4901)
-![image](https://github.com/user-attachments/assets/a13e37da-a211-4c61-9892-80a5271bb2b0)
-![image](https://github.com/user-attachments/assets/802c8119-086c-4449-995c-d6d38d49ff3f)
-![diagnosis_process_flow](https://github.com/user-attachments/assets/796fd0f1-9478-473a-a044-e308271d3832)
+![영유아피부질환진단서비스-mochicare-architecture](https://github.com/user-attachments/assets/9bb221b5-14bb-47db-8c38-98d7acc5275b)
+![영유아피부질환진단서비스-mochicare-이미지-업로드-전략](https://github.com/user-attachments/assets/7162b51d-be52-4aea-bfcd-bb04928a4901)
+![영유아피부질환진단서비스-mochicare-sagemaker-추론옵션-선택-기준](https://github.com/user-attachments/assets/a13e37da-a211-4c61-9892-80a5271bb2b0)
+![영유아피부질환진단서비스-mochicare-architecture](https://github.com/user-attachments/assets/802c8119-086c-4449-995c-d6d38d49ff3f)
+![영유아피부질환진단서비스-진단프로세스-diagnosis_process_flow](https://github.com/user-attachments/assets/796fd0f1-9478-473a-a044-e308271d3832)
 
-<img width="676" alt="image" src="https://github.com/user-attachments/assets/9c855f23-15c6-461d-90eb-4f4f3a38d2ea" />
+<img width="676" alt="영유아피부질환진단서비스-mochicare-rag-파이프라인" src="https://github.com/user-attachments/assets/9c855f23-15c6-461d-90eb-4f4f3a38d2ea" />
 
 ## UMAP 차원축소 시각화
-![image](https://github.com/user-attachments/assets/417339c9-dae4-4634-b142-1bca3e97499c)
+![영유아피부질환진단서비스-mochicare-umap-차원축소-시각화](https://github.com/user-attachments/assets/417339c9-dae4-4634-b142-1bca3e97499c)
 ## 진단 정확도 개선 전후
-![image](https://github.com/user-attachments/assets/f08c8076-dc61-4204-a4c2-a4dbb3c74fae)
+![영유아피부질환진단서비스-mochicare-진단-정확도-개선-전후](https://github.com/user-attachments/assets/f08c8076-dc61-4204-a4c2-a4dbb3c74fae)
 
 
-![image](https://github.com/user-attachments/assets/866968f2-457a-4adc-a568-7f8c9d5d46fa)
-![image](https://github.com/user-attachments/assets/5c7876aa-f861-4ba6-a24b-e7c14663d972)
+![mochicare-db-modeling](https://github.com/user-attachments/assets/866968f2-457a-4adc-a568-7f8c9d5d46fa)
+![mochicare-architecture](https://github.com/user-attachments/assets/5c7876aa-f861-4ba6-a24b-e7c14663d972)
 ## Grafana
-![grafana](https://github.com/user-attachments/assets/2f59a42e-4593-47d3-97ee-06f333bd9183)
+![영유아피부질환진단서비스-grafana-dashboard-mochicare](https://github.com/user-attachments/assets/2f59a42e-4593-47d3-97ee-06f333bd9183)
 
 ## LangSmith
-![langsmith_monitor](https://github.com/user-attachments/assets/da8fcde5-3bef-4d20-9e31-82833c0b930f)
+![영유아피부질환진단서비스-langsmith_monitor](https://github.com/user-attachments/assets/da8fcde5-3bef-4d20-9e31-82833c0b930f)
 
 
 
-![image](https://github.com/user-attachments/assets/0acb0399-d0d5-4f17-9f4d-d3712c203cee)
-![image](https://github.com/user-attachments/assets/d5a2fd39-a05c-4d56-a74d-c177e0c013c6)
-![image](https://github.com/user-attachments/assets/905a94aa-f811-41dd-a395-5b5629383b15)
+![영유아피부질환진단서비스-배포자동화-파이프라인-codedeploy-s3-ecr-githubactions](https://github.com/user-attachments/assets/0acb0399-d0d5-4f17-9f4d-d3712c203cee)
+![영유아피부질환진단서비스-artillery-성능-부하-스트레스-테스트](https://github.com/user-attachments/assets/d5a2fd39-a05c-4d56-a74d-c177e0c013c6)
+![영유아피부질환진단서비스-artillery-성능-부하-스트레스-테스트](https://github.com/user-attachments/assets/905a94aa-f811-41dd-a395-5b5629383b15)
 
 
 ## DATAWAREHOUSE
 
-![image](https://github.com/user-attachments/assets/7f52d1fb-1ecf-43cd-820b-2d3dc533d6e7)
-![image](https://github.com/user-attachments/assets/b3bf8d22-b425-41db-afce-4971ff0db492)
-![image](https://github.com/user-attachments/assets/c6144cf4-4c87-4f49-8678-54db1c4693d0)
+![DataWarehouse](https://github.com/user-attachments/assets/7f52d1fb-1ecf-43cd-820b-2d3dc533d6e7)
+![Star-schema-vs-Snowfalke-schema](https://github.com/user-attachments/assets/b3bf8d22-b425-41db-afce-4971ff0db492)
+![DataWarehouse-vs-DataLake](https://github.com/user-attachments/assets/c6144cf4-4c87-4f49-8678-54db1c4693d0)
 
 ## hadoop
-![image](https://github.com/user-attachments/assets/da6e3b72-e614-465d-bdc7-aa6b969ce3b1)
-![image](https://github.com/user-attachments/assets/196ac2e4-ec55-44a7-b55a-54f6863365e1)
-![image](https://github.com/user-attachments/assets/ae684e59-077c-4000-a8f1-ac470d2c24fa)
-![image](https://github.com/user-attachments/assets/fa44d95f-1f6d-471f-b938-8d1c3e0ad8c5)
-![image](https://github.com/user-attachments/assets/cda45644-d4bd-42c9-b39a-d2e308df07a2)
-![image](https://github.com/user-attachments/assets/d76ec83e-b0f5-45dc-b93b-a13e6a7c9f54)
+![HDFS-Architecture](https://github.com/user-attachments/assets/da6e3b72-e614-465d-bdc7-aa6b969ce3b1)
+![Hadoop-MapReduce](https://github.com/user-attachments/assets/196ac2e4-ec55-44a7-b55a-54f6863365e1)
+![YARN-Architecture](https://github.com/user-attachments/assets/ae684e59-077c-4000-a8f1-ac470d2c24fa)
+![Spark-Architecture](https://github.com/user-attachments/assets/fa44d95f-1f6d-471f-b938-8d1c3e0ad8c5)
+![Spark-Core](https://github.com/user-attachments/assets/cda45644-d4bd-42c9-b39a-d2e308df07a2)
+![MapReduce-vs-Spark](https://github.com/user-attachments/assets/d76ec83e-b0f5-45dc-b93b-a13e6a7c9f54)
 
