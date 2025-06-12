@@ -67,3 +67,8 @@
 ![image](https://github.com/user-attachments/assets/b3bf8d22-b425-41db-afce-4971ff0db492)
 ![image](https://github.com/user-attachments/assets/c6144cf4-4c87-4f49-8678-54db1c4693d0)
 
+## hadoop
+![image](https://github.com/user-attachments/assets/da6e3b72-e614-465d-bdc7-aa6b969ce3b1)
+![image](https://github.com/user-attachments/assets/196ac2e4-ec55-44a7-b55a-54f6863365e1)
+![image](https://github.com/user-attachments/assets/ae684e59-077c-4000-a8f1-ac470d2c24fa)
+
