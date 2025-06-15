@@ -67,7 +67,8 @@
 ![Star-schema-vs-Snowfalke-schema](https://github.com/user-attachments/assets/b3bf8d22-b425-41db-afce-4971ff0db492)
 ![DataWarehouse-vs-DataLake](https://github.com/user-attachments/assets/c6144cf4-4c87-4f49-8678-54db1c4693d0)
 ![BigQuery-Snowflake-Databricks-AWS-Redshift](https://github.com/user-attachments/assets/2d6c7f18-f42a-459d-9f5a-2d7fd86c6dd7)
-![AWS-S3-Azure-Data-Lake-Storage-Google-Cloud-Storage](https://github.com/user-attachments/assets/6b237d67-cb52-4fd3-9cd6-b03bafeaca9b)
+![AWS-S3-Azure-Data-Lake-Storage-Google-Cloud-Storage](https://github.com/user-attachments/assets/31c632ec-efff-4688-b2f2-a5def258f315)
+
 
 
 
