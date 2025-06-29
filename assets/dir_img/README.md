@@ -80,3 +80,6 @@
 ![Spark-Core](https://github.com/user-attachments/assets/cda45644-d4bd-42c9-b39a-d2e308df07a2)
 ![MapReduce-vs-Spark](https://github.com/user-attachments/assets/d76ec83e-b0f5-45dc-b93b-a13e6a7c9f54)
 
+## AirFlow
+airflow 3.0 architecture
+![airflow-3.0-architecture](https://github.com/user-attachments/assets/73fb0f5f-7488-4a38-ac64-20feaf0e6b14)
