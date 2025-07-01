@@ -336,26 +336,5 @@ ORDER BY USER_ID ASC, PRODUCT_ID DESC
 <br>
 
 
-## level 4
 
-
-### 19. 
-
-```sql
-
-```
-
-<br>
-
-
-
-
-
-### 20. 
-
-```sql
-
-```
-
-<br>
 
