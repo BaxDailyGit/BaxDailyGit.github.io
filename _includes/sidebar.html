@@ -62,6 +62,9 @@
                         <li><a href="/categories/#error" class=""> - 에러해결({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+              </ul>  
+
+          <span class="nav__sub-title">Study</span> 
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Computer_Science" %}
@@ -69,9 +72,6 @@
                         {% endif %}
                     {% endfor %}
                 </ul>
-              </ul>  
-
-          <!-- <span class="nav__sub-title">Study</span>  -->
             <!-- <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Java" %}
@@ -137,7 +137,7 @@
               </ul> -->
               
           <!-- <span class="nav__sub-title">Algorithm</span>  -->
-              <ul>
+              <!-- <ul>
                   {% for category in site.categories %}
                       {% if category[0] == "Algorithm" %}
                           <li><a href="/categories/#algorithm" class=""> - 알고리즘 구현({{category[1].size}})</a></li>
@@ -157,7 +157,7 @@
                           <li><a href="/categories/#algorithm-codetree" class=""> - 코드트리({{category[1].size}})</a></li>
                       {% endif %}
                   {% endfor %}
-              </ul>
+              </ul> -->
               
               
         </li>
