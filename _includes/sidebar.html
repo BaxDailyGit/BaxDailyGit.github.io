@@ -65,14 +65,14 @@
               </ul>  
 
           <span class="nav__sub-title">Study</span> 
-                <ul>
+                <!-- <ul>
                     {% for category in site.categories %}
-                        {% if category[0] == "Computer_Science" %}
-                            <li><a href="/categories/#Computer_Science" class=""> - 공부({{category[1].size}})</a></li>
+                        {% if category[0] == "CS" %}
+                            <li><a href="/categories/#cs" class=""> - 공부({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
-                </ul>
-            <!-- <ul>
+                </ul> -->
+            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Java" %}
                         <li><a href="/categories/#java" class=""> - Java({{category[1].size}})</a></li>
@@ -134,7 +134,14 @@
                         <li><a href="/categories/#javascript" class=""> - JavaScript({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-              </ul> -->
+              </ul>
+              <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DataEngineering" %}
+                        <li><a href="/categories/#data engineering" class=""> - DataEngineering({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+              </ul>
               
           <!-- <span class="nav__sub-title">Algorithm</span>  -->
               <!-- <ul>
