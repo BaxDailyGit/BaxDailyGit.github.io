@@ -83,3 +83,9 @@
 ## AirFlow
 airflow 3.0 architecture
 ![airflow-3.0-architecture](https://github.com/user-attachments/assets/a973b914-00ed-4497-b025-ae519427b4e0)
+
+## llm
+![image](https://github.com/user-attachments/assets/8241774f-23f5-47ca-b6ab-700ec7f3c87e)
+![image](https://github.com/user-attachments/assets/0e256a34-cfb3-4cbe-a777-3560c15b95c0)
+![image](https://github.com/user-attachments/assets/0c2534f7-fc04-4b9e-b9db-f68924bef67c)
+
