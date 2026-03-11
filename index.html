@@ -5,9 +5,45 @@ sidebar_main: true
 entries_layout: list
 ---
 
-<div class="grid__wrapper">
-    {% for post in paginator.posts %}
-    {% include archive-single3.html type="list" %}
-    {% endfor %}
+<div class="sort-toggle">
+  <button id="sort-popular" class="btn btn--primary btn--small sort-btn active" onclick="sortPosts('popularity')">인기순</button>
+  <button id="sort-latest" class="btn btn--inverse btn--small sort-btn" onclick="sortPosts('latest')">최신순</button>
 </div>
-{% include paginator.html %} 
+
+{% assign sorted_posts = site.posts | sort: "popularity" | reverse %}
+<div class="grid__wrapper" id="post-list">
+  {% for post in sorted_posts %}
+    {% include archive-single3.html type="list" %}
+  {% endfor %}
+</div>
+
+<script>
+function sortPosts(mode) {
+  var container = document.getElementById('post-list');
+  var items = Array.from(container.children);
+
+  items.sort(function(a, b) {
+    if (mode === 'popularity') {
+      return (parseInt(b.getAttribute('data-popularity')) || 0)
+           - (parseInt(a.getAttribute('data-popularity')) || 0);
+    } else {
+      return b.getAttribute('data-date').localeCompare(a.getAttribute('data-date'));
+    }
+  });
+
+  items.forEach(function(item) {
+    container.appendChild(item);
+  });
+
+  document.querySelectorAll('.sort-btn').forEach(function(btn) {
+    btn.classList.remove('active', 'btn--primary');
+    btn.classList.add('btn--inverse');
+  });
+
+  var activeId = (mode === 'popularity') ? 'sort-popular' : 'sort-latest';
+  var activeBtn = document.getElementById(activeId);
+  activeBtn.classList.add('active');
+  activeBtn.classList.remove('btn--inverse');
+  activeBtn.classList.add('btn--primary');
+}
+</script>
