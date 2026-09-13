@@ -89,3 +89,8 @@ airflow 3.0 architecture
 ![image](https://github.com/user-attachments/assets/0e256a34-cfb3-4cbe-a777-3560c15b95c0)
 ![image](https://github.com/user-attachments/assets/0c2534f7-fc04-4b9e-b9db-f68924bef67c)
 
+
+## ai
+
+<img width="561" height="407" alt="image" src="https://github.com/user-attachments/assets/a7cec798-49e8-4aa7-8de5-1a276add43ed" />
+
