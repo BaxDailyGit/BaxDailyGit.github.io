@@ -95,3 +95,6 @@ airflow 3.0 architecture
 <img width="561" height="407" alt="image" src="https://github.com/user-attachments/assets/a7cec798-49e8-4aa7-8de5-1a276add43ed" />
 
 <img width="1044" height="520" alt="image" src="https://github.com/user-attachments/assets/dbfab66d-4eaa-4795-97de-1cd455c4142e" />
+
+<img width="898" height="552" alt="image" src="https://github.com/user-attachments/assets/6d65845c-a9f4-4168-aab0-e04823ee1771" />
+
