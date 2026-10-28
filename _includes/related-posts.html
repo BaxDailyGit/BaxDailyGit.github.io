@@ -1,0 +1,34 @@
+{%- comment -%}
+  Related posts ranked by overlap with the current page:
+    same series x3, each shared tag x2, same category x1. Ties go to the newer post.
+  Falls back to the most recent posts when nothing overlaps.
+{%- endcomment -%}
+{%- assign ranked = "" | split: "" -%}
+{%- for post in site.posts -%}
+  {%- if post.url == page.url -%}{%- continue -%}{%- endif -%}
+  {%- assign score = 0 -%}
+  {%- if page.series and post.series == page.series -%}{%- assign score = score | plus: 3 -%}{%- endif -%}
+  {%- if page.categories.first and post.categories contains page.categories.first -%}{%- assign score = score | plus: 1 -%}{%- endif -%}
+  {%- for t in page.tags -%}
+    {%- if post.tags contains t -%}{%- assign score = score | plus: 2 -%}{%- endif -%}
+  {%- endfor -%}
+  {%- assign pad = score | plus: 1000 -%}
+  {%- capture key -%}{{ pad }}-{{ post.date | date: "%Y%m%d%H%M%S" }}-{{ forloop.index0 }}{%- endcapture -%}
+  {%- assign ranked = ranked | push: key -%}
+{%- endfor -%}
+{%- assign ranked = ranked | sort | reverse -%}
+
+{%- assign shown = 0 -%}
+<div class="page__related">
+  <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+  <div class="grid__wrapper">
+    {%- for key in ranked -%}
+      {%- if shown >= 4 -%}{%- break -%}{%- endif -%}
+      {%- assign parts = key | split: "-" -%}
+      {%- assign idx = parts[2] | plus: 0 -%}
+      {%- assign post = site.posts[idx] -%}
+      {%- include archive-single.html type="grid" -%}
+      {%- assign shown = shown | plus: 1 -%}
+    {%- endfor -%}
+  </div>
+</div>
