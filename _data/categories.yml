@@ -1,0 +1,24 @@
+# Sidebar category menu (see _includes/sidebar.html).
+# name  : value of `categories:` in the post front matter (case-sensitive)
+# label : text shown in the sidebar
+# A category that has posts but is not listed here is shown under "기타" automatically.
+- group: Experiences
+  items:
+    - { name: projects,   label: 프로젝트 }
+    - { name: activities, label: 활동 }
+    - { name: error,      label: 에러해결 }
+
+- group: Study
+  items:
+    - { name: AI,              label: AI }
+    - { name: DataEngineering, label: 데이터 엔지니어링 }
+    - { name: network,         label: 네트워크 }
+    - { name: LLM,             label: LLM }
+    - { name: Java,            label: Java }
+    - { name: SpringBoot,      label: 스프링부트 }
+    - { name: Database,        label: 데이터베이스 }
+    - { name: git,             label: 깃허브 }
+    - { name: Linux,           label: 리눅스 }
+    - { name: HTML,            label: HTML }
+    - { name: CSS,             label: CSS }
+    - { name: JavaScript,      label: JavaScript }

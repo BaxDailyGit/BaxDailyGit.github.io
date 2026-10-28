@@ -1,0 +1,39 @@
+{%- comment -%} Category menu driven by _data/categories.yml {%- endcomment -%}
+{%- assign known = "" -%}
+{%- for g in site.data.categories -%}
+  {%- for it in g.items -%}
+    {%- assign known = known | append: "|" | append: it.name -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign known = known | append: "|" -%}
+
+{%- for g in site.data.categories -%}
+  {%- capture group_html -%}
+    {%- for it in g.items -%}
+      {%- for category in site.categories -%}
+        {%- if category[0] == it.name -%}
+          <li><a href="{{ '/categories/' | relative_url }}#{{ category[0] | slugify }}"> - {{ it.label }}({{ category[1].size }})</a></li>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- assign trimmed = group_html | strip -%}
+  {%- if trimmed != "" -%}
+    <span class="nav__sub-title">{{ g.group }}</span>
+    <ul>{{ trimmed }}</ul>
+  {%- endif -%}
+{%- endfor -%}
+
+{%- capture other_html -%}
+  {%- for category in site.categories -%}
+    {%- assign needle = "|" | append: category[0] | append: "|" -%}
+    {%- unless known contains needle -%}
+      <li><a href="{{ '/categories/' | relative_url }}#{{ category[0] | slugify }}"> - {{ category[0] }}({{ category[1].size }})</a></li>
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign other_trimmed = other_html | strip -%}
+{%- if other_trimmed != "" -%}
+  <span class="nav__sub-title">기타</span>
+  <ul>{{ other_trimmed }}</ul>
+{%- endif -%}
