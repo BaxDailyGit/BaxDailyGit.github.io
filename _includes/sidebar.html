@@ -47,15 +47,16 @@
 
 <!--hit-->
   
-    <a href="https://hits.sh/baxdailygit.github.io/">
+    <a class="hits-link" href="https://hits.sh/baxdailygit.github.io/" target="_blank" rel="noopener">
         <style>
           .hits{
             width: auto; height: auto;
             max-width: 99px; 
             max-height: 20px;
           }
-        </style>  
-        <img class="hits" src="https://hits.sh/baxdailygit.github.io.svg?view=today-total&style=flat-square&label=VIEWS&color=fbfcfc&labelColor=fbfcfc"/>
+        </style>
+        {% comment %}Hide the badge if it can't load (ad blockers / DNS filters such as Pi-hole block hits.sh).{% endcomment %}
+        <img class="hits" alt="방문자 수" loading="lazy" src="https://hits.sh/baxdailygit.github.io.svg?view=today-total&style=flat-square&label=VIEWS&color=fbfcfc&labelColor=fbfcfc" onerror="this.parentNode.style.display='none'"/>
       </a>
  
 
