@@ -7,8 +7,10 @@
 //   npm run new-post -- "제목" --category AI
 //
 // File name : _posts/YYYY-MM-DD-<category><NNNN>.md  (NNNN = next number in that category)
-// Permalink : /<category>/<slug>   (slug is derived from ASCII letters/digits of the title,
-//             or pass --slug when the title is Korean only)
+// Permalink : /<category>/<slug>/  (lowercase, words joined by "-", trailing slash; the slug
+//             comes from the ASCII letters/digits of the title, or pass --slug when the
+//             title is Korean only). Older posts keep their mixed-style URLs on purpose:
+//             utterances maps comments to the page path.
 
 const fs = require("fs");
 const path = require("path");
@@ -50,7 +52,8 @@ const now = new Date();
 const day = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
 const time = `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
 
-const slug = (opts.slug || title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")) || `${prefix}${id}`;
+const toSlug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+const slug = toSlug(opts.slug || title) || `${prefix}${id}`;
 const fileName = `${day}-${prefix}${id}.md`;
 const filePath = path.join(postsDir, fileName);
 if (fs.existsSync(filePath)) {
@@ -64,9 +67,10 @@ lines.push(
   "layout: single",
   "published: true",
   `title:  "${title.replace(/"/g, '\\"')}"`,
-  `permalink: /${prefix}/${slug}`,
+  `permalink: /${prefix}/${slug}/`,
   `categories: ${category}`,
   `date: ${day} ${time}`,
+  "# last_modified_at: YYYY-MM-DD   # uncomment after revising the post (shown as 업데이트)",
 );
 if (toc) lines.push("toc: true", "toc_sticky: true");
 lines.push(
