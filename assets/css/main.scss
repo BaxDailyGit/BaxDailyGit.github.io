@@ -80,3 +80,32 @@ div.highlighter-rouge {
     }
   }
 }
+
+
+// TOC: stronger "you are here" marker (scrollspy adds .active) and mobile collapse
+.toc__menu .active a {
+  border-left: 3px solid $primary-color;
+  padding-left: calc(0.75rem - 3px);
+}
+
+.toc--collapsible {
+  .nav__title {
+    cursor: pointer;
+    user-select: none;
+
+    &::after {
+      content: "\25BE"; // ▾
+      float: right;
+    }
+  }
+
+  &.toc--collapsed {
+    .nav__title::after {
+      content: "\25B8"; // ▸
+    }
+
+    .toc__menu {
+      display: none;
+    }
+  }
+}

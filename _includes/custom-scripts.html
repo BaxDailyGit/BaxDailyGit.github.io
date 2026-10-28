@@ -45,6 +45,33 @@
       });
     }
 
+    // ---- TOC: collapsible below the desktop breakpoint (it renders inline above the post there) ----
+    var toc = document.querySelector('nav.toc');
+    if (toc && window.matchMedia('(max-width: 1279px)').matches) {
+      var tocTitle = toc.querySelector('.nav__title');
+      if (tocTitle) {
+        toc.classList.add('toc--collapsible', 'toc--collapsed');
+        tocTitle.setAttribute('role', 'button');
+        tocTitle.setAttribute('tabindex', '0');
+        tocTitle.setAttribute('aria-expanded', 'false');
+        var toggleToc = function() {
+          var collapsed = toc.classList.toggle('toc--collapsed');
+          tocTitle.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+        };
+        tocTitle.addEventListener('click', toggleToc);
+        tocTitle.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleToc(); }
+        });
+        // picking a section should get the menu out of the way
+        toc.addEventListener('click', function(e) {
+          if (e.target.closest('.toc__menu a')) {
+            toc.classList.add('toc--collapsed');
+            tocTitle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    }
+
     // ---- Copy button for code blocks ----
     document.querySelectorAll('div.highlighter-rouge').forEach(function(block) {
       var pre = block.querySelector('pre');

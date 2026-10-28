@@ -22,3 +22,11 @@ div.highlighter-rouge .copy-code-btn {
   background: rgba(40, 40, 40, 0.85);
   color: #eee;
 }
+
+.toc__menu .active a {
+  border-left-color: $primary-color;
+}
+
+.series-nav {
+  border-left-color: $primary-color;
+}
