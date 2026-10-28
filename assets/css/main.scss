@@ -57,3 +57,26 @@ div.highlighter-rouge {
     opacity: 1;
   }
 }
+
+
+// Series navigation (bottom of a post)
+.series-nav {
+  margin: 2em 0;
+  padding: 1em 1.2em;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-left: 4px solid $primary-color;
+  border-radius: 4px;
+
+  .series-nav__title {
+    margin: 0 0 0.5em;
+  }
+
+  .series-nav__list {
+    margin: 0;
+    padding-left: 1.4em;
+
+    li.current {
+      font-weight: bold;
+    }
+  }
+}
