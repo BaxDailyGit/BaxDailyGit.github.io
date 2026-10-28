@@ -1,6 +1,7 @@
 name: Build check
 
-# Verifies that the site still builds. Deployment is unchanged (GitHub Pages).
+# Verifies that the site still builds, that teaser/og images stay small, and that internal
+# links and images are not broken. Deployment is unchanged (GitHub Pages).
 on:
   push:
     branches: [master]
@@ -12,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check teaser / og image sizes (max 500KB)
+        run: node scripts/check-images.js
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
@@ -20,3 +23,9 @@ jobs:
         run: bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
+      - name: Check internal links and images (html-proofer)
+        # external links are skipped (slow and flaky); absolute links to this site are checked
+        # as internal ones. GitHub-uploaded images in posts often have no alt, so that's allowed.
+        run: |
+          gem install html-proofer -v "~> 5.0" --no-document
+          htmlproofer ./_site --disable-external --ignore-missing-alt --swap-urls "^https\://baxdailygit\.github\.io:"
