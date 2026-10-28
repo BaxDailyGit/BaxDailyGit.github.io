@@ -46,32 +46,30 @@
       {%- endif %}
     </div>
     <div class="timeline__card">
-      <div class="timeline__head">
-        {%- if item.logo %}
-        <span class="timeline__logo"><img src="{{ item.logo | relative_url }}" alt="{{ item.org }} 로고" loading="lazy" decoding="async"></span>
-        {%- endif %}
-        <div>
-          <h4 class="timeline__title">{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h4>
-          <p class="timeline__org">{{ item.org }}</p>
-        </div>
-      </div>
-      {%- if item.highlights %}
-      <ul class="timeline__highlights">
-        {%- for h in item.highlights %}
-        {%- if h.text %}
-        <li>{{ h.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}
-          <ul>
-            {%- for sub in h.items %}
-            <li>{{ sub | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
-            {%- endfor %}
-          </ul>
-        </li>
-        {%- else %}
-        <li>{{ h | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
-        {%- endif %}
-        {%- endfor %}
-      </ul>
+      {%- if item.logo %}
+      <span class="timeline__logo"><img src="{{ item.logo | relative_url }}" alt="" loading="lazy" decoding="async"></span>
       {%- endif %}
+      <div class="timeline__body">
+        <h4 class="timeline__title">{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h4>
+        <p class="timeline__org">{{ item.org }}</p>
+        {%- if item.highlights %}
+        <ul class="timeline__highlights">
+          {%- for h in item.highlights %}
+          {%- if h.text %}
+          <li>{{ h.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}
+            <ul>
+              {%- for sub in h.items %}
+              <li>{{ sub | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
+              {%- endfor %}
+            </ul>
+          </li>
+          {%- else %}
+          <li>{{ h | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+      </div>
     </div>
   </li>
 {%- endfor %}
