@@ -1,0 +1,24 @@
+---
+# Dark variant of main.css. Loaded on top of main.css by _includes/theme-init.html
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/dark"; // skin
+@import "minimal-mistakes"; // main partials
+
+.sort-toggle {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1em;
+
+  .sort-btn.active {
+    pointer-events: none;
+  }
+}
+
+div.highlighter-rouge .copy-code-btn {
+  background: rgba(40, 40, 40, 0.85);
+  color: #eee;
+}

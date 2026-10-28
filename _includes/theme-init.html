@@ -1,0 +1,19 @@
+<!-- Dark mode: apply saved/preferred theme before first paint to avoid a flash -->
+<script>
+  (function() {
+    var theme = null;
+    try { theme = localStorage.getItem('theme'); } catch (e) {}
+    if (!theme) {
+      theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    window.__theme = theme;
+    document.documentElement.setAttribute('data-theme', theme);
+    if (theme === 'dark') {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.id = 'theme-dark-css';
+      link.href = '{{ "/assets/css/dark.css" | relative_url }}';
+      document.head.appendChild(link);
+    }
+  })();
+</script>

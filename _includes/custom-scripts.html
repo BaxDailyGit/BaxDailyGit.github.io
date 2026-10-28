@@ -1,0 +1,78 @@
+<script>
+  (function() {
+    // ---- Dark mode toggle ----
+    var DARK_HREF = '{{ "/assets/css/dark.css" | relative_url }}';
+    var btn = document.getElementById('theme-toggle');
+
+    function syncButton(theme) {
+      if (!btn) return;
+      var icon = btn.querySelector('i');
+      icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+      btn.setAttribute('aria-label', theme === 'dark' ? '라이트 모드로 전환' : '다크 모드로 전환');
+    }
+
+    function applyTheme(theme) {
+      var link = document.getElementById('theme-dark-css');
+      if (theme === 'dark' && !link) {
+        link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.id = 'theme-dark-css';
+        link.href = DARK_HREF;
+        document.head.appendChild(link);
+      } else if (theme === 'light' && link) {
+        link.parentNode.removeChild(link);
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      window.__theme = theme;
+      syncButton(theme);
+
+      // utterances comments follow the site theme
+      var frame = document.querySelector('iframe.utterances-frame');
+      if (frame) {
+        frame.contentWindow.postMessage(
+          { type: 'set-theme', theme: theme === 'dark' ? 'github-dark' : 'github-light' },
+          'https://utteranc.es'
+        );
+      }
+    }
+
+    syncButton(window.__theme || 'light');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var next = (window.__theme === 'dark') ? 'light' : 'dark';
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        applyTheme(next);
+      });
+    }
+
+    // ---- Copy button for code blocks ----
+    document.querySelectorAll('div.highlighter-rouge').forEach(function(block) {
+      var pre = block.querySelector('pre');
+      if (!pre || block.querySelector('.copy-code-btn')) return;
+
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'copy-code-btn';
+      button.textContent = '복사';
+      button.addEventListener('click', function() {
+        var code = pre.querySelector('code') || pre;
+        var done = function() {
+          button.textContent = '복사됨';
+          setTimeout(function() { button.textContent = '복사'; }, 1500);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(code.innerText).then(done);
+        } else {
+          var ta = document.createElement('textarea');
+          ta.value = code.innerText;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          done();
+        }
+      });
+      block.appendChild(button);
+    });
+  })();
+</script>
