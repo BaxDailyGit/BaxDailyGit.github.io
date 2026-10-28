@@ -27,12 +27,19 @@
       window.__theme = theme;
       syncButton(theme);
 
-      // utterances comments follow the site theme
+      // comments (utterances or giscus) follow the site theme
       var frame = document.querySelector('iframe.utterances-frame');
       if (frame) {
         frame.contentWindow.postMessage(
           { type: 'set-theme', theme: theme === 'dark' ? 'github-dark' : 'github-light' },
           'https://utteranc.es'
+        );
+      }
+      var giscusFrame = document.querySelector('iframe.giscus-frame');
+      if (giscusFrame) {
+        giscusFrame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme === 'dark' ? 'dark' : 'light' } } },
+          'https://giscus.app'
         );
       }
 
