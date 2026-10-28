@@ -4,6 +4,7 @@
 # type       : work | education | activity (가운데 축의 아이콘과 모양이 달라진다)
 # title, org : 카드 제목과 소속. url이 있으면 제목이 링크가 된다.
 # logo       : 소속 로고 이미지 경로 (assets/about_logo/). 정사각형 칸에 비율을 유지한 채 맞춰진다.
+# org_url    : 소속 페이지 주소 (LinkedIn 등). 있으면 로고를 눌렀을 때 새 창으로 열린다.
 # start, end : "YYYY-MM". end를 비우면 '현재'로 표시되고 기간은 방문 시점 기준으로 계산된다.
 # duration   : 자동 계산 대신 보여줄 기간 문구 (예: 몇 주짜리 스터디)
 # period     : start/end 대신 날짜 칸에 그대로 보여줄 문구 (예: 졸업 연도만 적을 때)
@@ -14,6 +15,7 @@
   title: "Sutskever's List 스터디"
   org: "K-DEVCON"
   logo: /assets/about_logo/k-devcon_logo.png
+  org_url: "https://www.linkedin.com/company/k-devcon"
   start: "2026-08"
   end: "2026-10"
   duration: "6주"
@@ -25,6 +27,7 @@
   title: "Runner"
   org: "Pseudo Lab (가짜연구소)"
   logo: /assets/about_logo/Pseudo_Lab_logo.png
+  org_url: "https://www.linkedin.com/company/pseudolab"
   start: "2026-03"
   highlights:
     - text: "13th: BLIND(법률 지식 그래프)"
@@ -39,6 +42,7 @@
   title: "연구원 (전문연구요원)"
   org: "JLK"
   logo: /assets/about_logo/JLK_log.jpg
+  org_url: "https://www.linkedin.com/company/jlk-inspection/"
   start: "2025-08"
   highlights:
     - "의료 데이터, 솔루션 기반 LLM workflow, AI 에이전트 설계 및 개발"
@@ -49,6 +53,7 @@
   title: "Bachelor of Science, Physics"
   org: "Ajou University (아주대학교)"
   logo: /assets/about_logo/ajou_univ_logo.png
+  org_url: "https://www.linkedin.com/school/ajou/"
   period: "2024 졸업"
   highlights:
     - "Double major: Software Engineering"
@@ -57,6 +62,7 @@
   title: "학부연구원 (핵의학과)"
   org: "Ajou University Medical Center"
   logo: /assets/about_logo/ajou_hospital_logo.svg
+  org_url: "https://www.linkedin.com/company/ajou-university-medical-center/"
   start: "2021-09"
   end: "2023-01"
   highlights:

@@ -46,7 +46,9 @@
       {%- endif %}
     </div>
     <div class="timeline__card">
-      {%- if item.logo %}
+      {%- if item.logo and item.org_url %}
+      <a class="timeline__logo" href="{{ item.org_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.org | escape }} (새 창)"><img src="{{ item.logo | relative_url }}" alt="" loading="lazy" decoding="async"></a>
+      {%- elsif item.logo %}
       <span class="timeline__logo"><img src="{{ item.logo | relative_url }}" alt="" loading="lazy" decoding="async"></span>
       {%- endif %}
       <div class="timeline__body">
