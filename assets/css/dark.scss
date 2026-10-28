@@ -7,6 +7,7 @@ search: false
 
 @import "minimal-mistakes/skins/dark"; // skin
 @import "minimal-mistakes"; // main partials
+@import "timeline"; // About page timeline
 
 .sort-toggle {
   display: flex;

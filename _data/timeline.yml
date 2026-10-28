@@ -1,0 +1,32 @@
+# About 페이지의 경력·학력 타임라인 (_includes/timeline.html)
+# 최신 항목을 위에 적는다. 위에서부터 카드가 왼쪽/오른쪽으로 번갈아 놓인다.
+#
+# type       : work | education (가운데 축의 아이콘이 달라진다)
+# start, end : "YYYY-MM". end를 비우면 '현재'로 표시되고 기간은 방문 시점 기준으로 계산된다.
+# period     : start/end 대신 날짜 칸에 그대로 보여줄 문구 (예: 졸업 연도만 적을 때)
+# highlights : 카드 안의 bullet. Markdown(**굵게**, [링크](url))을 쓸 수 있다.
+
+- type: work
+  title: "연구원 (전문연구요원)"
+  org: "JLK"
+  start: "2025-08"
+  highlights:
+    - "의료 데이터, 솔루션 기반 LLM workflow, AI 에이전트 설계 및 개발"
+    - "LLM 서비스 성능 평가 및 품질 검증 체계 구축"
+    - "LLM 배포 환경 및 추론 최적화"
+
+- type: education
+  title: "Bachelor of Science, Physics"
+  org: "Ajou University (아주대학교)"
+  period: "2024 졸업"
+  highlights:
+    - "Double major: Software Engineering"
+
+- type: work
+  title: "학부연구원 (핵의학과)"
+  org: "Ajou University Medical Center"
+  start: "2021-09"
+  end: "2023-01"
+  highlights:
+    - "의료 영상 데이터 전처리 파이프라인 구축 및 표준화"
+    - "스크립트 기반 자동화로 데이터 가공 워크플로우를 최적화하여 데이터 처리 효율성 90% 향상 및 QC 강화"

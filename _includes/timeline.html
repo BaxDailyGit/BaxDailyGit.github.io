@@ -1,0 +1,64 @@
+{%- comment -%}
+  경력·학력 중앙축 타임라인. 데이터는 _data/timeline.yml.
+  기간(n년 n개월)은 시작 달과 끝 달을 모두 세며(LinkedIn과 같은 방식) 빌드 시점에 계산하고,
+  진행 중인 항목은 아래 스크립트가 방문 시점 기준으로 다시 계산한다.
+{%- endcomment -%}
+{%- assign now_y = site.time | date: "%Y" | plus: 0 -%}
+{%- assign now_m = site.time | date: "%m" | plus: 0 -%}
+<ol class="timeline">
+{%- for item in site.data.timeline -%}
+  {%- assign period = item.period -%}
+  {%- assign duration = nil -%}
+  {%- if item.start -%}
+    {%- assign s = item.start | split: "-" -%}
+    {%- if item.end -%}
+      {%- assign e = item.end | split: "-" -%}
+      {%- assign ey = e[0] | plus: 0 -%}
+      {%- assign em = e[1] | plus: 0 -%}
+      {%- capture period %}{{ s[0] }}.{{ s[1] }} – {{ e[0] }}.{{ e[1] }}{% endcapture -%}
+    {%- else -%}
+      {%- assign ey = now_y -%}
+      {%- assign em = now_m -%}
+      {%- capture period %}{{ s[0] }}.{{ s[1] }} – 현재{% endcapture -%}
+    {%- endif -%}
+    {%- assign months = ey | minus: s[0] | times: 12 | plus: em | minus: s[1] | plus: 1 -%}
+    {%- assign years = months | divided_by: 12 -%}
+    {%- assign rest = months | modulo: 12 -%}
+    {%- capture duration %}{% if years > 0 %}{{ years }}년 {% endif %}{% if rest > 0 %}{{ rest }}개월{% endif %}{% endcapture -%}
+    {%- assign duration = duration | strip -%}
+  {%- endif %}
+  <li class="timeline__item timeline__item--{{ item.type }}{% if item.start and item.end == nil %} is-current{% endif %}">
+    <span class="timeline__node" aria-hidden="true"><i class="fas {% if item.type == 'education' %}fa-graduation-cap{% else %}fa-briefcase{% endif %}"></i></span>
+    <div class="timeline__date">
+      <span class="timeline__period">{{ period }}</span>
+      {%- if duration %}
+      <span class="timeline__duration"{% if item.start and item.end == nil %} data-start="{{ item.start }}"{% endif %}>{{ duration }}</span>
+      {%- endif %}
+    </div>
+    <div class="timeline__card">
+      <h4 class="timeline__title">{{ item.title }}</h4>
+      <p class="timeline__org">{{ item.org }}</p>
+      {%- if item.highlights %}
+      <ul class="timeline__highlights">
+        {%- for h in item.highlights %}
+        <li>{{ h | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </li>
+{%- endfor %}
+</ol>
+<script>
+  (function() {
+    var now = new Date();
+    var els = document.querySelectorAll('.timeline__duration[data-start]');
+    for (var i = 0; i < els.length; i++) {
+      var p = els[i].getAttribute('data-start').split('-');
+      var months = (now.getFullYear() - Number(p[0])) * 12 + (now.getMonth() + 1 - Number(p[1])) + 1;
+      var years = Math.floor(months / 12);
+      var rest = months % 12;
+      els[i].textContent = [years > 0 ? years + '년' : '', rest > 0 ? rest + '개월' : ''].join(' ').trim();
+    }
+  })();
+</script>
