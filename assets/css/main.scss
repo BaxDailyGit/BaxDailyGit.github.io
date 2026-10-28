@@ -10,6 +10,11 @@ search: false
 @import "timeline"; // About page timeline
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 
+// LinkedIn icon in black like the other social icons, not the brand blue (dark.css still inherits text color)
+.social-icons .fa-linkedin {
+  color: $github-color;
+}
+
 .sort-toggle {
   display: flex;
   gap: 0.5em;
