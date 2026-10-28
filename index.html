@@ -27,6 +27,7 @@ entries_layout: list
   var currentPage = 1;
   var currentMode = 'latest';
   var container = document.getElementById('post-list');
+  var sortToggle = document.querySelector('.sort-toggle');
   var paginationNav = document.getElementById('js-pagination');
   var paginationUl = paginationNav.querySelector('ul');
 
@@ -36,6 +37,22 @@ entries_layout: list
 
   function getTotalPages() {
     return Math.ceil(getItems().length / POSTS_PER_PAGE);
+  }
+
+  // State lives in the address bar: ?sort=popular&page=2 (defaults are left out, so it's just "/")
+  function urlFor(mode, page) {
+    var params = [];
+    if (mode === 'popularity') params.push('sort=popular');
+    if (page > 1) params.push('page=' + page);
+    return location.pathname + (params.length ? '?' + params.join('&') : '');
+  }
+
+  function readUrl() {
+    var params = new URLSearchParams(location.search);
+    return {
+      mode: params.get('sort') === 'popular' ? 'popularity' : 'latest',
+      page: parseInt(params.get('page'), 10) || 1
+    };
   }
 
   function showPage(page) {
@@ -55,6 +72,25 @@ entries_layout: list
     renderPagination();
   }
 
+  function pageLink(label, page, disabledClass) {
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.textContent = label;
+    if (disabledClass) {
+      a.className = disabledClass;
+    } else {
+      // a real link, so "open in new tab" and copying the address work
+      a.href = urlFor(currentMode, page);
+      a.addEventListener('click', function(e) {
+        if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
+        e.preventDefault();
+        go(currentMode, page, true);
+      });
+    }
+    li.appendChild(a);
+    return li;
+  }
+
   function renderPagination() {
     var totalPages = getTotalPages();
     paginationUl.innerHTML = '';
@@ -65,54 +101,14 @@ entries_layout: list
     }
     paginationNav.style.display = '';
 
-    // Previous
-    var prevLi = document.createElement('li');
-    var prevA = document.createElement('a');
-    prevA.textContent = 'Previous';
-    if (currentPage === 1) {
-      prevA.href = '#';
-      prevA.className = 'disabled';
-    } else {
-      prevA.href = '#';
-      prevA.addEventListener('click', function(e) { e.preventDefault(); showPage(currentPage - 1); });
-    }
-    prevLi.appendChild(prevA);
-    paginationUl.appendChild(prevLi);
-
-    // Page numbers
+    paginationUl.appendChild(pageLink('Previous', currentPage - 1, currentPage === 1 ? 'disabled' : ''));
     for (var i = 1; i <= totalPages; i++) {
-      var li = document.createElement('li');
-      var a = document.createElement('a');
-      a.href = '#';
-      a.textContent = i;
-      if (i === currentPage) {
-        a.className = 'disabled current';
-      } else {
-        (function(pageNum) {
-          a.addEventListener('click', function(e) { e.preventDefault(); showPage(pageNum); });
-        })(i);
-      }
-      li.appendChild(a);
-      paginationUl.appendChild(li);
+      paginationUl.appendChild(pageLink(i, i, i === currentPage ? 'disabled current' : ''));
     }
-
-    // Next
-    var nextLi = document.createElement('li');
-    var nextA = document.createElement('a');
-    nextA.textContent = 'Next';
-    if (currentPage === totalPages) {
-      nextA.href = '#';
-      nextA.className = 'disabled';
-    } else {
-      nextA.href = '#';
-      nextA.addEventListener('click', function(e) { e.preventDefault(); showPage(currentPage + 1); });
-    }
-    nextLi.appendChild(nextA);
-    paginationUl.appendChild(nextLi);
+    paginationUl.appendChild(pageLink('Next', currentPage + 1, currentPage === totalPages ? 'disabled' : ''));
   }
 
-  function sortPosts(mode) {
-    currentMode = mode;
+  function sortItems(mode) {
     var items = getItems();
 
     items.sort(function(a, b) {
@@ -129,8 +125,6 @@ entries_layout: list
       container.appendChild(item);
     });
 
-    showPage(1);
-
     document.querySelectorAll('.sort-btn').forEach(function(btn) {
       btn.classList.remove('active', 'btn--primary');
       btn.classList.add('btn--inverse');
@@ -143,11 +137,32 @@ entries_layout: list
     activeBtn.classList.add('btn--primary');
   }
 
-  // Event listeners
-  document.getElementById('sort-popular').addEventListener('click', function() { sortPosts('popularity'); });
-  document.getElementById('sort-latest').addEventListener('click', function() { sortPosts('latest'); });
+  // Apply a sort/page; user actions also add a history entry and bring the list back into view
+  function go(mode, page, fromUser) {
+    if (mode !== currentMode) {
+      currentMode = mode;
+      sortItems(mode);
+    }
+    showPage(page);
 
-  // Initialize
-  showPage(1);
+    if (fromUser) {
+      history.pushState(null, '', urlFor(currentMode, currentPage));
+      if (sortToggle.getBoundingClientRect().top < 0) {
+        sortToggle.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }
+
+  // Event listeners
+  document.getElementById('sort-popular').addEventListener('click', function() { go('popularity', 1, true); });
+  document.getElementById('sort-latest').addEventListener('click', function() { go('latest', 1, true); });
+  window.addEventListener('popstate', function() {
+    var state = readUrl();
+    go(state.mode, state.page, false);
+  });
+
+  // Initialize from the address bar
+  var initial = readUrl();
+  go(initial.mode, initial.page, false);
 })();
 </script>
