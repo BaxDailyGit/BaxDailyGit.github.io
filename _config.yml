@@ -31,7 +31,7 @@ future                   : true
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "giscus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : "BaxDailyGit" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -44,13 +44,11 @@ comments:
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
-  # giscus is ready to replace utterances: enable Discussions on the repo, install the giscus
-  # app (https://github.com/apps/giscus), fill category_name/category_id below, then set
-  # provider: "giscus". (The old utterances threads are all on URLs that no longer exist.)
+  # giscus: GitHub Discussions of this repo (giscus app installed), one discussion per page path
   giscus:
     repo_id              : "R_kgDOJ0jBmw" # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
+    category_name        : "Announcements" # only the owner and giscus can open threads here
+    category_id          : "DIC_kwDOJ0jBm84DJzyu" # Shown during giscus setup at https://giscus.app
     discussion_term      : # "pathname" (default), "url", "title", "og:title"
     reactions_enabled    : # '1' for enabled (default), '0' for disabled
     theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
