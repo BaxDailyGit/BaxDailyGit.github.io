@@ -3,6 +3,7 @@
     // ---- Dark mode toggle ----
     var DARK_HREF = '{{ "/assets/css/dark.css" | relative_url }}';
     var btn = document.getElementById('theme-toggle');
+    var themeListeners = []; // other widgets that redraw on a theme change (e.g. Mermaid)
 
     function syncButton(theme) {
       if (!btn) return;
@@ -34,6 +35,8 @@
           'https://utteranc.es'
         );
       }
+
+      themeListeners.forEach(function(listener) { listener(theme); });
     }
 
     syncButton(window.__theme || 'light');
@@ -149,6 +152,41 @@
       });
     });
     window.addEventListener('resize', function() { postImages.forEach(markZoomable); });
+
+    // ---- Mermaid: ```mermaid code blocks become diagrams (library loaded only when used) ----
+    // rouge has no mermaid lexer, so the block is <pre><code class="language-mermaid"> (or a
+    // div.language-mermaid wrapper when highlighted); replace the outermost element either way
+    var mermaidBlocks = [];
+    document.querySelectorAll('div.language-mermaid, pre > code.language-mermaid').forEach(function(el) {
+      var block = el.tagName === 'CODE' ? el.parentNode : el;
+      if (mermaidBlocks.indexOf(block) < 0 && !mermaidBlocks.some(function(b) { return b.contains(block); })) {
+        mermaidBlocks.push(block);
+      }
+    });
+    if (mermaidBlocks.length) {
+      var diagrams = mermaidBlocks.map(function(block) {
+        var diagram = document.createElement('pre');
+        diagram.className = 'mermaid';
+        diagram.textContent = (block.querySelector('code') || block).textContent;
+        block.parentNode.replaceChild(diagram, block);
+        return { node: diagram, source: diagram.textContent };
+      });
+      var renderMermaid = function(theme) {
+        diagrams.forEach(function(d) {
+          d.node.removeAttribute('data-processed');
+          d.node.textContent = d.source;
+        });
+        window.mermaid.initialize({ startOnLoad: false, theme: theme === 'dark' ? 'dark' : 'default' });
+        window.mermaid.run({ nodes: diagrams.map(function(d) { return d.node; }) });
+      };
+      var mermaidScript = document.createElement('script');
+      mermaidScript.src = 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js';
+      mermaidScript.onload = function() {
+        renderMermaid(window.__theme);
+        themeListeners.push(renderMermaid);
+      };
+      document.head.appendChild(mermaidScript);
+    }
 
     // ---- MathJax: loaded only when the post text (outside code) contains TeX ----
     var article = document.querySelector('.page__content');

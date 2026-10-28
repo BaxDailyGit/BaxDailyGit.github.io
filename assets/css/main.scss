@@ -63,6 +63,13 @@ div.highlighter-rouge {
   cursor: zoom-in;
 }
 
+// ```mermaid blocks rendered as diagrams
+.page__content pre.mermaid {
+  margin: 1.5em 0;
+  font-family: inherit;
+  text-align: center;
+}
+
 
 // Series navigation (bottom of a post)
 .series-nav {
