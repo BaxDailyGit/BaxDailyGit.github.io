@@ -171,11 +171,8 @@ body {
     padding-inline-start: 1.25rem;
   }
 
-  /* vertical alignment for first content */
-  > :first-child,
-  > aside + :nth-child(2) {
-    margin-top: 0em;
-  }
+  // upstream 4.28 zeroes the top margin of the first content element here ("vertical alignment
+  // for first content"); left out so the first heading keeps its gap below the post meta line
 }
 
 .page__hero {
