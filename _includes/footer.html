@@ -4,6 +4,10 @@
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
 
+    {% unless site.atom_feed.hide %}
+      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-rss-square" aria-hidden="true"></i> RSS</a></li>
+    {% endunless %}
+
     {% if site.footer.links %}
       {% for link in site.footer.links %}
         {% if link.label and link.url %}
