@@ -1,14 +1,45 @@
-# About 페이지의 경력·학력 타임라인 (_includes/timeline.html)
-# 최신 항목을 위에 적는다. 위에서부터 카드가 왼쪽/오른쪽으로 번갈아 놓인다.
+# About 페이지의 경력·학력·활동 타임라인 (_includes/timeline.html)
+# 시작이 최근인 항목을 위에 적는다. 위에서부터 카드가 왼쪽/오른쪽으로 번갈아 놓인다.
 #
-# type       : work | education (가운데 축의 아이콘이 달라진다)
+# type       : work | education | activity (가운데 축의 아이콘과 모양이 달라진다)
+# title, org : 카드 제목과 소속. url이 있으면 제목이 링크가 된다.
+# logo       : 소속 로고 이미지 경로 (assets/images/logos/)
 # start, end : "YYYY-MM". end를 비우면 '현재'로 표시되고 기간은 방문 시점 기준으로 계산된다.
+# duration   : 자동 계산 대신 보여줄 기간 문구 (예: 몇 주짜리 스터디)
 # period     : start/end 대신 날짜 칸에 그대로 보여줄 문구 (예: 졸업 연도만 적을 때)
 # highlights : 카드 안의 bullet. Markdown(**굵게**, [링크](url))을 쓸 수 있다.
+#              하위 bullet이 필요하면 { text: "...", items: [...] } 형태로 적는다.
+
+- type: activity
+  title: "Sutskever's List 스터디"
+  url: "https://k-devcon.com/channel/6/post/563"
+  org: "K-DEVCON"
+  logo: /assets/images/logos/k-devcon.png
+  start: "2026-08"
+  end: "2026-10"
+  duration: "6주"
+  highlights:
+    - "AlexNet, ResNet, RNN·LSTM, Deep Speech 2, Transformer 등 현대 AI의 기반 논문을 주 1회 함께 읽고 토론"
+    - "[스터디 정리 글](/sutskever_list/ResNet) ·[주차별 후기](https://k-devcon.com/search?q=AI+%EB%85%BC%EB%AC%B8+%EC%8A%A4%ED%84%B0%EB%94%94&channelId=4)"
+
+- type: activity
+  title: "Runner"
+  org: "Pseudo Lab (가짜연구소)"
+  logo: /assets/images/logos/pseudolab.png
+  start: "2026-03"
+  highlights:
+    - text: "13th: BLIND(법률 지식 그래프)"
+      items:
+        - "진행중"
+    - text: "12th: FOMO(First One Moving Onward)"
+      items:
+        - "[발표] Context Rot 극복하기"
+        - "[발표] 에이전트 실패 원인과 안정적인 워크플로우 설계 사례 분석"
 
 - type: work
   title: "연구원 (전문연구요원)"
   org: "JLK"
+  logo: /assets/images/logos/jlk.svg
   start: "2025-08"
   highlights:
     - "의료 데이터, 솔루션 기반 LLM workflow, AI 에이전트 설계 및 개발"
@@ -18,6 +49,7 @@
 - type: education
   title: "Bachelor of Science, Physics"
   org: "Ajou University (아주대학교)"
+  logo: /assets/images/logos/ajou.png
   period: "2024 졸업"
   highlights:
     - "Double major: Software Engineering"
@@ -25,6 +57,7 @@
 - type: work
   title: "학부연구원 (핵의학과)"
   org: "Ajou University Medical Center"
+  logo: /assets/images/logos/ajou-hospital.png
   start: "2021-09"
   end: "2023-01"
   highlights:

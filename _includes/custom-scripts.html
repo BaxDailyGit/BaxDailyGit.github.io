@@ -135,7 +135,7 @@
     // ---- Click to zoom post images (Magnific Popup ships with the theme) ----
     var postImages = Array.prototype.filter.call(
       document.querySelectorAll('.page__content img'),
-      function(img) { return !img.closest('a, .toc, .series-nav'); }
+      function(img) { return !img.closest('a, .toc, .series-nav, .timeline'); }
     );
     // only images shown smaller than their real size are worth zooming
     function markZoomable(img) {

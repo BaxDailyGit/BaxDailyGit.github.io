@@ -1,5 +1,5 @@
 {%- comment -%}
-  경력·학력 중앙축 타임라인. 데이터는 _data/timeline.yml.
+  경력·학력·활동 중앙축 타임라인. 데이터는 _data/timeline.yml.
   기간(n년 n개월)은 시작 달과 끝 달을 모두 세며(LinkedIn과 같은 방식) 빌드 시점에 계산하고,
   진행 중인 항목은 아래 스크립트가 방문 시점 기준으로 다시 계산한다.
 {%- endcomment -%}
@@ -9,6 +9,7 @@
 {%- for item in site.data.timeline -%}
   {%- assign period = item.period -%}
   {%- assign duration = nil -%}
+  {%- assign ongoing = false -%}
   {%- if item.start -%}
     {%- assign s = item.start | split: "-" -%}
     {%- if item.end -%}
@@ -17,6 +18,7 @@
       {%- assign em = e[1] | plus: 0 -%}
       {%- capture period %}{{ s[0] }}.{{ s[1] }} – {{ e[0] }}.{{ e[1] }}{% endcapture -%}
     {%- else -%}
+      {%- assign ongoing = true -%}
       {%- assign ey = now_y -%}
       {%- assign em = now_m -%}
       {%- capture period %}{{ s[0] }}.{{ s[1] }} – 현재{% endcapture -%}
@@ -26,22 +28,47 @@
     {%- assign rest = months | modulo: 12 -%}
     {%- capture duration %}{% if years > 0 %}{{ years }}년 {% endif %}{% if rest > 0 %}{{ rest }}개월{% endif %}{% endcapture -%}
     {%- assign duration = duration | strip -%}
-  {%- endif %}
-  <li class="timeline__item timeline__item--{{ item.type }}{% if item.start and item.end == nil %} is-current{% endif %}">
-    <span class="timeline__node" aria-hidden="true"><i class="fas {% if item.type == 'education' %}fa-graduation-cap{% else %}fa-briefcase{% endif %}"></i></span>
+  {%- endif -%}
+  {%- if item.duration -%}
+    {%- assign duration = item.duration -%}
+  {%- endif -%}
+  {%- case item.type -%}
+    {%- when "education" -%}{%- assign icon = "fa-graduation-cap" -%}
+    {%- when "activity" -%}{%- assign icon = "fa-users" -%}
+    {%- else -%}{%- assign icon = "fa-briefcase" -%}
+  {%- endcase %}
+  <li class="timeline__item timeline__item--{{ item.type }}{% if ongoing %} is-current{% endif %}">
+    <span class="timeline__node" aria-hidden="true"><i class="fas {{ icon }}"></i></span>
     <div class="timeline__date">
       <span class="timeline__period">{{ period }}</span>
       {%- if duration %}
-      <span class="timeline__duration"{% if item.start and item.end == nil %} data-start="{{ item.start }}"{% endif %}>{{ duration }}</span>
+      <span class="timeline__duration"{% if ongoing and item.duration == nil %} data-start="{{ item.start }}"{% endif %}>{{ duration }}</span>
       {%- endif %}
     </div>
     <div class="timeline__card">
-      <h4 class="timeline__title">{{ item.title }}</h4>
-      <p class="timeline__org">{{ item.org }}</p>
+      <div class="timeline__head">
+        {%- if item.logo %}
+        <span class="timeline__logo"><img src="{{ item.logo | relative_url }}" alt="{{ item.org }} 로고" loading="lazy" decoding="async"></span>
+        {%- endif %}
+        <div>
+          <h4 class="timeline__title">{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h4>
+          <p class="timeline__org">{{ item.org }}</p>
+        </div>
+      </div>
       {%- if item.highlights %}
       <ul class="timeline__highlights">
         {%- for h in item.highlights %}
+        {%- if h.text %}
+        <li>{{ h.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}
+          <ul>
+            {%- for sub in h.items %}
+            <li>{{ sub | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
+            {%- endfor %}
+          </ul>
+        </li>
+        {%- else %}
         <li>{{ h | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
+        {%- endif %}
         {%- endfor %}
       </ul>
       {%- endif %}
