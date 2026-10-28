@@ -6,11 +6,12 @@ entries_layout: list
 ---
 
 <div class="sort-toggle">
-  <button id="sort-latest" class="btn btn--primary btn--small sort-btn active">최신순</button>
-  <button id="sort-popular" class="btn btn--inverse btn--small sort-btn">인기순</button>
+  <button id="sort-popular" class="btn btn--primary btn--small sort-btn active">인기순</button>
+  <button id="sort-latest" class="btn btn--inverse btn--small sort-btn">최신순</button>
 </div>
 
-{% comment %}<!-- site.posts is already newest first; `popularity` is a hand-set front matter rank -->{% endcomment %}
+{% comment %}<!-- rendered newest first (site.posts); the script below re-sorts to 인기순, the default view.
+     `popularity` is a hand-set front matter rank -->{% endcomment %}
 <div class="grid__wrapper" id="post-list">
   {% for post in site.posts %}
     {% include archive-single3.html type="list" %}
@@ -25,7 +26,7 @@ entries_layout: list
 (function() {
   var POSTS_PER_PAGE = 5;
   var currentPage = 1;
-  var currentMode = 'latest';
+  var currentMode = 'latest'; // order of the list as rendered; init below switches to the default
   var container = document.getElementById('post-list');
   var sortToggle = document.querySelector('.sort-toggle');
   var paginationNav = document.getElementById('js-pagination');
@@ -39,10 +40,10 @@ entries_layout: list
     return Math.ceil(getItems().length / POSTS_PER_PAGE);
   }
 
-  // State lives in the address bar: ?sort=popular&page=2 (defaults are left out, so it's just "/")
+  // State lives in the address bar: ?sort=latest&page=2 (defaults — 인기순, page 1 — are left out, so it's just "/")
   function urlFor(mode, page) {
     var params = [];
-    if (mode === 'popularity') params.push('sort=popular');
+    if (mode === 'latest') params.push('sort=latest');
     if (page > 1) params.push('page=' + page);
     return location.pathname + (params.length ? '?' + params.join('&') : '');
   }
@@ -50,7 +51,7 @@ entries_layout: list
   function readUrl() {
     var params = new URLSearchParams(location.search);
     return {
-      mode: params.get('sort') === 'popular' ? 'popularity' : 'latest',
+      mode: params.get('sort') === 'latest' ? 'latest' : 'popularity',
       page: parseInt(params.get('page'), 10) || 1
     };
   }
