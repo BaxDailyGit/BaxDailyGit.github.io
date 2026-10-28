@@ -72,6 +72,21 @@
       }
     }
 
+    // ---- Clipboard (code blocks, share link) ----
+    function copyText(text, done) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done);
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        done();
+      }
+    }
+
     // ---- Copy button for code blocks ----
     document.querySelectorAll('div.highlighter-rouge').forEach(function(block) {
       var pre = block.querySelector('pre');
@@ -83,23 +98,28 @@
       button.textContent = '복사';
       button.addEventListener('click', function() {
         var code = pre.querySelector('code') || pre;
-        var done = function() {
+        copyText(code.innerText, function() {
           button.textContent = '복사됨';
           setTimeout(function() { button.textContent = '복사'; }, 1500);
-        };
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(code.innerText).then(done);
-        } else {
-          var ta = document.createElement('textarea');
-          ta.value = code.innerText;
-          document.body.appendChild(ta);
-          ta.select();
-          document.execCommand('copy');
-          document.body.removeChild(ta);
-          done();
-        }
+        });
       });
       block.appendChild(button);
+    });
+
+    // ---- Share: copy the post link (the label is hidden on small screens, so swap the icon too) ----
+    document.querySelectorAll('.share-copy-link').forEach(function(button) {
+      var icon = button.querySelector('i');
+      var label = button.querySelector('span');
+      button.addEventListener('click', function() {
+        copyText(button.getAttribute('data-url'), function() {
+          icon.className = 'fas fa-fw fa-check';
+          label.textContent = ' 복사됨';
+          setTimeout(function() {
+            icon.className = 'fas fa-fw fa-link';
+            label.textContent = ' 링크 복사';
+          }, 1500);
+        });
+      });
     });
 
     // ---- MathJax: loaded only when the post text (outside code) contains TeX ----
