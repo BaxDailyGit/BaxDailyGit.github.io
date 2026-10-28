@@ -58,6 +58,11 @@ div.highlighter-rouge {
   }
 }
 
+// Post images that open in a lightbox (see custom-scripts.html)
+.page__content img.zoomable {
+  cursor: zoom-in;
+}
+
 
 // Series navigation (bottom of a post)
 .series-nav {

@@ -122,6 +122,34 @@
       });
     });
 
+    // ---- Click to zoom post images (Magnific Popup ships with the theme) ----
+    var postImages = Array.prototype.filter.call(
+      document.querySelectorAll('.page__content img'),
+      function(img) { return !img.closest('a, .toc, .series-nav'); }
+    );
+    // only images shown smaller than their real size are worth zooming
+    function markZoomable(img) {
+      img.classList.toggle('zoomable', img.naturalWidth > img.clientWidth * 1.1);
+    }
+    postImages.forEach(function(img) {
+      if (img.complete) markZoomable(img);
+      img.addEventListener('load', function() { markZoomable(img); });
+      img.addEventListener('click', function() {
+        if (!img.classList.contains('zoomable') || !window.jQuery) return;
+        var items = postImages.filter(function(i) { return i.classList.contains('zoomable'); });
+        jQuery.magnificPopup.open({
+          items: items.map(function(i) {
+            // GitHub uploads get a generic "image" alt; don't show that as a caption
+            return { src: i.currentSrc || i.src, title: /^image(\.\w+)?$/i.test(i.alt) ? '' : i.alt };
+          }),
+          type: 'image',
+          gallery: { enabled: items.length > 1, navigateByImgClick: true, preload: [0, 1] },
+          closeOnContentClick: items.length === 1
+        }, items.indexOf(img));
+      });
+    });
+    window.addEventListener('resize', function() { postImages.forEach(markZoomable); });
+
     // ---- MathJax: loaded only when the post text (outside code) contains TeX ----
     var article = document.querySelector('.page__content');
     if (article) {
