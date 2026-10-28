@@ -1,5 +1,6 @@
-{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{% assign locale = include.locale | default: site.locale %}
+{% assign date_format = page.date_format | default: site.date_format | default: "%B %-d, %Y" %}
 {% comment %}<!-- the publish date is in the header (page__meta); only an actual revision is shown here -->{% endcomment %}
 {% if page.last_modified_at %}
-  <p class="page__date"><strong><i class="fas fa-fw fa-history" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time class="dt-updated" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: date_format }}</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-clock-rotate-left" aria-hidden="true"></i> {{ site.data.ui-text[locale].date_label | default: "Updated:" }}</strong> <time class="dt-updated" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: date_format }}</time></p>
 {% endif %}
