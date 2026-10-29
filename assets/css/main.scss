@@ -76,6 +76,31 @@ div.highlighter-rouge {
   text-align: center;
 }
 
+// Figures captured from a book or paper (figure include with class="source-figure"):
+// centered at their own width instead of stretched to the column, source in the caption
+.page__content figure.source-figure {
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: auto;
+    max-width: 100%;
+  }
+
+  figcaption {
+    text-align: center;
+  }
+
+  // small diagrams look oversized at the full column width
+  &.source-figure--narrow img {
+    width: 400px;
+  }
+
+  &.source-figure--medium img {
+    width: 560px;
+  }
+}
+
 
 // Series navigation (bottom of a post)
 .series-nav {
