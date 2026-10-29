@@ -237,6 +237,7 @@ sass:
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
   quiet_deps: true
   silence_deprecations: ['import']
+  sourcemap: never # don't publish main.css.map/dark.css.map (the GitHub Pages build never made them)
 
 
 # Outputting

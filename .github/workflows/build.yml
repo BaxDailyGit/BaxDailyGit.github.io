@@ -1,12 +1,22 @@
-name: Build check
+name: Build and deploy
 
 # Verifies that the site still builds, that teaser/og images stay small, and that internal
-# links and images are not broken. Deployment is unchanged (GitHub Pages).
+# links and images are not broken. On master, the checked _site is then deployed to GitHub
+# Pages (Settings > Pages > Source must be "GitHub Actions"). Pull requests are only checked.
 on:
   push:
     branches: [master]
   pull_request:
     branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# one deployment at a time; a newer push waits instead of cancelling a deploy in progress
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -29,3 +39,23 @@ jobs:
         run: |
           gem install html-proofer -v "~> 5.0" --no-document
           htmlproofer ./_site --disable-external --ignore-missing-alt --swap-urls "^https\://baxdailygit\.github\.io:"
+      - name: Upload site for GitHub Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./_site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
